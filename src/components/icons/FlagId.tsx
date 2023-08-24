@@ -1,0 +1,33 @@
+import React from 'react'
+
+export const FlagId = () => {
+  return (
+    <svg
+      width="27"
+      height="20"
+      viewBox="0 0 27 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_64_175)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M0 0H26.6667V10.375H0V0Z"
+          fill="#E70011"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M0 10H26.6667V20H0V10Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_64_175">
+          <rect width="26.6667" height="20" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}

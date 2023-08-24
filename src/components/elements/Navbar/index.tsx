@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-import { ChevronDown } from '@/components/icons'
+import { ChevronDown, FlagId, FlagUs } from '@/components/icons'
 import { useTranslations } from 'next-intl'
 
 export const Navbar: React.FC = () => {
@@ -24,6 +24,24 @@ export const Navbar: React.FC = () => {
   }, [])
 
   const t = useTranslations('Navbar')
+
+  const renderMenu = (id: string) => {
+    switch (id) {
+      case 'en':
+        return (
+          <>
+            <FlagUs /> US
+          </>
+        )
+
+      default:
+        return (
+          <>
+            <FlagId /> ID
+          </>
+        )
+    }
+  }
 
   return (
     <>
@@ -73,16 +91,20 @@ export const Navbar: React.FC = () => {
             {t('4')}
           </Link>
         </div>
-        <Menu shadow="md">
+        <Menu shadow="md" width={100}>
           <Menu.Target>
-            <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded">
-              {locale == 'en' ? 'US' : 'ID'} <ChevronDown />
+            <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded gap-1">
+              {renderMenu(locale)} <ChevronDown />
             </button>
           </Menu.Target>
 
           <Menu.Dropdown>
             <Link href={locale == 'en' ? '/id' : '/en'}>
-              <Menu.Item>{locale == 'en' ? 'ID' : 'US'}</Menu.Item>
+              <Menu.Item>
+                <div className="flex items-center gap-1">
+                  {locale == 'en' ? renderMenu('id') : renderMenu(locale)}
+                </div>
+              </Menu.Item>
             </Link>
           </Menu.Dropdown>
         </Menu>
