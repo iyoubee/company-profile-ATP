@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
+import RootStyleRegistry from '@/emotion'
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
@@ -42,7 +43,13 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={sans.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <RootStyleRegistry>
+            <div className="flex justify-center w-full bg-gradient-to-r from-[#BFE0FF] via-[#C7FFFF] to-[#FFFDC7]">
+              <div className="relative max-w-[2560px] flex-none w-full text-black">
+                {children}
+              </div>
+            </div>
+          </RootStyleRegistry>
         </NextIntlClientProvider>
       </body>
     </html>
