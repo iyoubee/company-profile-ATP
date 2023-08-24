@@ -1,11 +1,11 @@
-import "./globals.css"
-import type { Metadata } from "next"
-import { DM_Sans } from "next/font/google"
+import './globals.css'
+import type { Metadata } from 'next'
+import { DM_Sans } from 'next/font/google'
 
-const inter = DM_Sans({ subsets: ["latin"] })
+const inter = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Aceng Tunggal Perkasa",
+  title: 'Aceng Tunggal Perkasa',
 }
 
 export default function RootLayout({

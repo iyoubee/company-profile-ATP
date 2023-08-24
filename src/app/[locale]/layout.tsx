@@ -1,9 +1,9 @@
-import { NextIntlClientProvider } from "next-intl"
-import { notFound } from "next/navigation"
-import type { Metadata } from "next"
+import { NextIntlClientProvider } from 'next-intl'
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "id" }]
+  return [{ locale: 'en' }, { locale: 'id' }]
 }
 
 interface LocaleLayoutProps {
@@ -15,11 +15,11 @@ interface LocaleLayoutProps {
 
 export const generateMetadata = ({ params }: LocaleLayoutProps): Metadata => {
   const description =
-    params.locale == "en"
-      ? "With a proven track record in the coffee and essential oil market, we are determined to grow our business further."
-      : "Dengan rekam jejak yang terbukti di pasar kopi dan minyak esensial (Atsiri), kami bertekad untuk mengembangkan bisnis kami lebih jauh."
+    params.locale == 'en'
+      ? 'With a proven track record in the coffee and essential oil market, we are determined to grow our business further.'
+      : 'Dengan rekam jejak yang terbukti di pasar kopi dan minyak esensial (Atsiri), kami bertekad untuk mengembangkan bisnis kami lebih jauh.'
   return {
-    title: "Home | ATP",
+    title: 'Home | ATP',
     description,
   }
 }
