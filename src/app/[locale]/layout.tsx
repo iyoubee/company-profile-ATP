@@ -46,7 +46,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <RootStyleRegistry>
             <div className="flex justify-center w-full bg-gradient-to-r from-[#BFE0FF] via-[#C7FFFF] to-[#FFFDC7]">
-              <div className="relative max-w-[2560px] flex-none w-full text-black">
+              <div className="relative max-w-[1536px] flex-none w-full text-black">
                 <Navbar />
                 {children}
               </div>

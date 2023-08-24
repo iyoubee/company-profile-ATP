@@ -3,7 +3,7 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 
 export const HeroIndex: React.FC = () => {
-  const t = useTranslations('Index')
+  const t = useTranslations('Index.hero')
   return (
     <>
       <section className=' h-fit bg-[url("/heroIndexAssets.svg")] bg-no-repeat bg-cover relative'>
@@ -14,10 +14,10 @@ export const HeroIndex: React.FC = () => {
               <span className="text-[#D6E8F2]">Quality</span> Meet.
             </p>
             <p className="text-[#E9E0D7] font-medium text-[24px]">
-              {t('hero.desc')}
+              {t('desc')}
             </p>
             <button className="rounded-full bg-[#294696] text-[20px] font-bold leading-[22px] text-[#D6E8F2] px-[36px] py-[15px] w-fit flex-none z-20">
-              {t('hero.button')}
+              {t('button')}
             </button>
           </div>
         </div>

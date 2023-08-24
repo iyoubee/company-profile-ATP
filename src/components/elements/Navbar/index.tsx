@@ -34,12 +34,15 @@ export const Navbar: React.FC = () => {
           </>
         )
 
-      default:
+      case 'id':
         return (
           <>
             <FlagId /> ID
           </>
         )
+
+      default:
+        return 'error'
     }
   }
 
@@ -102,7 +105,7 @@ export const Navbar: React.FC = () => {
             <Link href={locale == 'en' ? '/id' : '/en'}>
               <Menu.Item>
                 <div className="flex items-center gap-1">
-                  {locale == 'en' ? renderMenu('id') : renderMenu(locale)}
+                  {locale == 'en' ? renderMenu('id') : renderMenu('en')}
                 </div>
               </Menu.Item>
             </Link>
