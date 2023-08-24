@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import { DM_Sans } from 'next/font/google'
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
@@ -24,6 +25,8 @@ export const generateMetadata = ({ params }: LocaleLayoutProps): Metadata => {
   }
 }
 
+const sans = DM_Sans({ subsets: ['latin'] })
+
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -37,7 +40,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={sans.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
