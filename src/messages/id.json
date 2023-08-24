@@ -1,0 +1,61 @@
+{
+  "Index": {
+    "hero": {
+      "title": "Where Sustainability and Quality Meet.",
+      "desc": "Dengan rekam jejak yang terbukti di pasar kopi dan minyak esensial (Atsiri), kami bertekad untuk mengembangkan bisnis kami lebih jauh.",
+      "button": "Explore Now"
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "comp": "PT. Aceng Tunggal Perkasa",
+      "desc1": "PT ATP memulai Inisisasi bisnis produk-produk pertanian sejak tahun 2009 dan terus berkembang hingga saat ini..Disamping permintaan yang terus meningkat baik untuk kopi arabika dan CLO untuk memenuhi kebutuhan domestic dan ekspor. PT. ATP sejak sejak tahun 2020 mulai mengelola dan mengembangkan agrowisata.",
+      "desc2": "Agrowisata Tepas Papandayan (ATP) merupakan bagian dari unit bisnis komunitas yang tergabung dalam PT. ATP sebagai representasi dari Badan Usaha Milik Desa (BUMDES) Kramatwangi Kecamatan Cisurupan Kabupaten Garut. Sejak pertengahan tahun 2022, ATP tersebut mulai dikenalkan sebagai wisata alam alternatif di kaki gunung Papandayan Kabupaten Garut, dan terus dikembangkan sampai saat ini.",
+      "partners": "Mitra Bekerjasama",
+      "prod": "Ribu Ton Biji Kopi Diproduksi",
+      "country": "Negara Menjadi Destinasi Ekspor Kami",
+      "button": "Dive deeper about us"
+    },
+    "product": {
+      "title": "Produk Kami",
+      "desc": "Kami dengan bangga membuat produk kami dari kebun dan pabrik kami sendiri. Kami bertujuan untuk memberikan produk berkualitas terbaik ke rumah Anda. Rasakan kekayaan di setiap tetes, setiap biji.",
+      "button": "Explore our product"
+    },
+    "value": {
+      "title": "Nilai Kami untuk Selalu Bertumbuh",
+      "desc": "Kami adalah perusahaan yang bergerak di bidang holtikultura, yang tidak hanya melakukan ekspansi bisnis, tetapi juga memiliki agrowisata dan melakukan edukasi. Kami memiliki visi untuk menjadi perusahaan yang berkontribusi positif bagi lingkungan, masyarakat, dan perekonomian Indonesia.",
+      "1": {
+        "title": "Pioneering",
+        "desc": "Kami bertekad untuk selalu memahami kebutuhan pasar dalam membuat produk kami. Kami mengambil inisiatif dan memulai hal-hal baru untuk membuat perubahan yang positif."
+      },
+      "2": {
+        "title": "Empowering",
+        "desc": "Kami yakin bahwa setiap sumber daya yang kami miliki memiliki potensi untuk berkembang. Kami berkomitmen untuk memberdayakan semua sumber daya tersebut agar mencapai potensi penuh mereka."
+      },
+      "3": {
+        "title": "Exploring",
+        "desc": "Kami selalu mencari cara untuk mengekspansi bisnis dan impact kami kepada masyarakat. Kami berkomitmen untuk berinovasi pada bisnis kami."
+      },
+      "4": {
+        "title": "Educating",
+        "desc": "Kami yakin bahwa pendidikan adalah kunci untuk kehutanan yang berkelanjutan. Kami terbuka untuk berbagi pengetahuan kami tentang pentingnya kehutanan dan potensinya untuk mendukung kehutanan."
+      }
+    },
+    "partner": {
+      "title": "Partner Kami",
+      "desc": "Kami sangat berterima kasih atas testimoni positif dari pelanggan kami. Kami selalu bekerja keras untuk meningkatkan produk dan layanan kami, dan menjadi kepuasan bagi kami ketika mendengar bahwa pelanggan kami puas. Kami berkomitmen untuk memberikan pelanggan kami pengalaman produk terbaik yang kami bisa berikan, dan kami berharap Anda akan terus mengunjungi kami dan menikmati produk kami.",
+      "1": "",
+      "2": "",
+      "3": ""
+    },
+    "question": {
+      "title": "Tertarik? Ada pertanyaan?",
+      "desc": "Ada pertanyaan atau komentar? Cukup tulis pesan kepada kami!",
+      "asdasd": ""
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Tentang Kami"
+    }
+  }
+}
