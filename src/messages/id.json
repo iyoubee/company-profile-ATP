@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "1": "Home",
+    "2": "Tentang Kami",
+    "3": "Produk",
+    "4": "Kontak"
+  },
   "Index": {
     "hero": {
       "title": "Where Sustainability and Quality Meet.",

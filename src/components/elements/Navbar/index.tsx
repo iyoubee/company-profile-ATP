@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { ChevronDown } from '@/components/icons'
+import { useTranslations } from 'next-intl'
 
 export const Navbar: React.FC = () => {
   const [scroll, setScroll] = useState(false)
@@ -21,6 +22,8 @@ export const Navbar: React.FC = () => {
       !window.scrollY ? setScroll(false) : setScroll(true)
     )
   }, [])
+
+  const t = useTranslations('Navbar')
 
   return (
     <>
@@ -44,6 +47,32 @@ export const Navbar: React.FC = () => {
             <p className="text-[#D2E9F2] font-bold text-[36px]">ATP</p>
           </div>
         </Link>
+        <div className="flex gap-5">
+          <Link
+            href={'/'}
+            className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
+          >
+            {t('1')}
+          </Link>
+          <Link
+            href={'/'}
+            className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
+          >
+            {t('2')}
+          </Link>
+          <Link
+            href={'/'}
+            className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
+          >
+            {t('3')}
+          </Link>
+          <Link
+            href={'/'}
+            className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
+          >
+            {t('4')}
+          </Link>
+        </div>
         <Menu shadow="md">
           <Menu.Target>
             <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded">
@@ -52,11 +81,9 @@ export const Navbar: React.FC = () => {
           </Menu.Target>
 
           <Menu.Dropdown>
-            <Menu.Item>
-              <Link href={locale == 'en' ? '/id' : '/en'}>
-                {locale == 'en' ? 'ID' : 'US'}
-              </Link>
-            </Menu.Item>
+            <Link href={locale == 'en' ? '/id' : '/en'}>
+              <Menu.Item>{locale == 'en' ? 'ID' : 'US'}</Menu.Item>
+            </Link>
           </Menu.Dropdown>
         </Menu>
       </div>
