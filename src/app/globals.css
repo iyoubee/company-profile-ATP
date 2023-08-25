@@ -49,3 +49,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #272b52;
 }
+
+.slick-slider .slick-slide {
+  padding: 0 15px;
+}

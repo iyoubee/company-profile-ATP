@@ -51,8 +51,8 @@ export const Navbar: React.FC = () => {
       <div
         className={`bg-[#294696] h-[90px] w-full drop-shadow-sm shadow-lg flex justify-between sticky top-0 transition-all duration-1000 z-50 items-center ${
           scroll
-            ? 'md:top-1 md:scale-[0.99] lg:top-2 px-[75px]'
-            : 'px-20 top-0 scale-100'
+            ? 'md:top-1 md:scale-[0.99] lg:top-2 px-[75px] rounded-full'
+            : 'px-20 top-0 scale-100 rounded-none'
         }`}
       >
         <Link href={'/'}>
