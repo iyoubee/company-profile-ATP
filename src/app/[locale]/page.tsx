@@ -1,4 +1,4 @@
-import { AboutUsIndex, HeroIndex, ProductIndex } from '@/components'
+import { AboutUsIndex, HeroIndex, ProductIndex, ValueIndex } from '@/components'
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <HeroIndex />
       <AboutUsIndex />
       <ProductIndex />
+      <ValueIndex />
     </main>
   )
 }
