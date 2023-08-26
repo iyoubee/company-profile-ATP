@@ -5,7 +5,7 @@ import { Reveal } from '../Reveal'
 export const HeroProduct: React.FC = () => {
   return (
     <>
-      <div className='aspect-square md:aspect-[12/7] lg:aspect-heroProduct w-full bg-[url("/heroProductAssetMobile.svg")] lg:bg-[url("/heroProductAsset.svg")] bg-cover bg-no-repeat p-5 lg:px-20 lg:pb-[87px] bg-center'>
+      <div className='aspect-square md:aspect-[12/7] lg:aspect-heroProduct w-full bg-[url("/heroProductAssetMobile.svg")] md:bg-[url("/heroProductAsset.svg")] bg-cover bg-no-repeat p-5 lg:px-20 lg:pb-[87px] bg-center'>
         <div className="md:w-1/2 h-full flex flex-col justify-end">
           <Reveal>
             <p className="text-[#D6E8F2] font-bold text-[36px] lg:text-[60px] xl:text-[80px] 2xl:text-[96px] leading-[48.6px] lg:leading-[129.6px]">
