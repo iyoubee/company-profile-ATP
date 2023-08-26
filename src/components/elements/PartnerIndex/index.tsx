@@ -41,7 +41,7 @@ export const PartnerIndex: React.FC = () => {
       <div className="w-full mt-[128px]">
         <div className="hidden lg:block">
           <Reveal>
-            <Slider {...settings} ref={sliderRef} className="tes">
+            <Slider {...settings} ref={sliderRef}>
               <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
                 <PartnerCard />
               </div>
@@ -65,7 +65,7 @@ export const PartnerIndex: React.FC = () => {
         </div>
         <div className="lg:hidden">
           <Reveal>
-            <Slider {...settings2} ref={sliderRef} className="tes">
+            <Slider {...settings2} ref={sliderRef}>
               <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
                 <PartnerCard />
               </div>

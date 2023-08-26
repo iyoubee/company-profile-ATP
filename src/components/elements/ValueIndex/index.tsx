@@ -11,6 +11,7 @@ import {
   Exploring,
   Pioneering,
 } from '@/components/icons'
+import Image from 'next/image'
 
 export const ValueIndex: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null)
@@ -91,7 +92,7 @@ export const ValueIndex: React.FC = () => {
           <Reveal>
             <div className="flex gap-[60px]">
               <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[309px] h-[349px] rounded-[24px] p-[48px] flex-initial">
-                <Pioneering />
+                <Image src={'/pion.svg'} alt="pion" width={72} height={72} />
                 <div className="mt-[10px]">
                   <p className="text-[#E9E0D7] font-semibold text-[32px] mb-[6px]">
                     {t('1.title')}
