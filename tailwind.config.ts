@@ -15,6 +15,8 @@ const config: Config = {
       },
       aspectRatio: {
         map: '11 / 4',
+        heroProduct: '12 / 5',
+        heroProductMobile: '4 / 5',
       },
       screens: {
         xla: '1440px',
