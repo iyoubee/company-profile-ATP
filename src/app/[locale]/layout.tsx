@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import RootStyleRegistry from '@/emotion'
-import { Navbar } from '@/components'
+import { LanguageContextProvider, Navbar } from '@/components'
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
@@ -44,14 +44,16 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={sans.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <RootStyleRegistry>
-            <div className="flex justify-center w-full bg-gradient-to-r from-[#BFE0FF] via-[#C7FFFF] to-[#FFFDC7]">
-              <div className="relative max-w-[1536px] flex-none w-full text-black">
-                <Navbar />
-                {children}
+          <LanguageContextProvider>
+            <RootStyleRegistry>
+              <div className="flex justify-center w-full bg-gradient-to-r from-[#BFE0FF] via-[#C7FFFF] to-[#FFFDC7]">
+                <div className="relative max-w-[1536px] flex-none w-full text-black">
+                  <Navbar />
+                  {children}
+                </div>
               </div>
-            </div>
-          </RootStyleRegistry>
+            </RootStyleRegistry>
+          </LanguageContextProvider>
         </NextIntlClientProvider>
       </body>
     </html>

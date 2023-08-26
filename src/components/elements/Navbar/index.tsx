@@ -2,11 +2,11 @@
 import { Burger, Menu } from '@mantine/core'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { ChevronDown, FlagId, FlagUs } from '@/components/icons'
 import { useTranslations } from 'next-intl'
 import { useDisclosure } from '@mantine/hooks'
+import { useLanguageContext } from '@/components/contexts'
 
 export const Navbar: React.FC = () => {
   const [opened, { toggle }] = useDisclosure(false)
@@ -14,11 +14,7 @@ export const Navbar: React.FC = () => {
 
   const [scroll, setScroll] = useState(false)
 
-  const path = usePathname()
-
-  const pathSplited = path.split('/')
-
-  const locale = pathSplited[1] == 'en' ? 'en' : 'id'
+  const { language } = useLanguageContext()
 
   useEffect(() => {
     window.addEventListener('scroll', () =>
@@ -78,7 +74,10 @@ export const Navbar: React.FC = () => {
             : 'lg:px-20 top-0 scale-100 rounded-none'
         }`}
       >
-        <Link href={'/'} className="scale-50 lg:scale-100">
+        <Link
+          href={language == 'en' ? '/en' : '/id'}
+          className="scale-50 lg:scale-100"
+        >
           <div className="flex gap-2">
             <div className=" relative w-[54px] h-[54px] rounded-full border-2 border-[#D2E9F2]">
               <Image
@@ -121,15 +120,15 @@ export const Navbar: React.FC = () => {
           <Menu shadow="md" width={100}>
             <Menu.Target>
               <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded gap-1">
-                {renderMenu(locale)} <ChevronDown />
+                {renderMenu(language)} <ChevronDown />
               </button>
             </Menu.Target>
 
             <Menu.Dropdown>
-              <Link href={locale == 'en' ? '/id' : '/en'}>
+              <Link href={language == 'en' ? '/id' : '/en'}>
                 <Menu.Item>
                   <div className="flex items-center gap-1">
-                    {locale == 'en' ? renderMenu('id') : renderMenu('en')}
+                    {language == 'en' ? renderMenu('id') : renderMenu('en')}
                   </div>
                 </Menu.Item>
               </Link>
@@ -179,13 +178,13 @@ export const Navbar: React.FC = () => {
                   {t('4')}
                 </Link>
               </Menu.Item>
-              <Link href={locale == 'en' ? '/id' : '/en'}>
+              <Link href={language == 'en' ? '/id' : '/en'}>
                 <Menu.Item>
                   <div
                     className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
                   >
                     Change to{' '}
-                    {locale == 'en' ? renderMenu2('id') : renderMenu2('en')}
+                    {language == 'en' ? renderMenu2('id') : renderMenu2('en')}
                   </div>
                 </Menu.Item>
               </Link>
