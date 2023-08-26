@@ -1,5 +1,6 @@
 export interface LanguageContextValue {
   language: string
+  currentPath: string
 }
 
 export interface ContextProviderProps {

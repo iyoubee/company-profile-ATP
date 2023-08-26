@@ -16,7 +16,9 @@ export const LanguageContextProvider: React.FC<ContextProviderProps> = ({
 
   const language = pathSplited[1] == 'en' ? 'en' : 'id'
 
-  const contextValue = { language }
+  const currentPath = path.slice(3)
+
+  const contextValue = { language, currentPath }
 
   return (
     <LanguageContext.Provider value={contextValue}>

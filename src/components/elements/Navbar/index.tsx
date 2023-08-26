@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
 
   const [scroll, setScroll] = useState(false)
 
-  const { language } = useLanguageContext()
+  const { language, currentPath } = useLanguageContext()
 
   useEffect(() => {
     window.addEventListener('scroll', () =>
@@ -125,7 +125,7 @@ export const Navbar: React.FC = () => {
             </Menu.Target>
 
             <Menu.Dropdown>
-              <Link href={language == 'en' ? '/id' : '/en'}>
+              <Link href={(language == 'en' ? '/id' : '/en') + currentPath}>
                 <Menu.Item>
                   <div className="flex items-center gap-1">
                     {language == 'en' ? renderMenu('id') : renderMenu('en')}
@@ -178,7 +178,7 @@ export const Navbar: React.FC = () => {
                   {t('4')}
                 </Link>
               </Menu.Item>
-              <Link href={language == 'en' ? '/id' : '/en'}>
+              <Link href={(language == 'en' ? '/id' : '/en') + currentPath}>
                 <Menu.Item>
                   <div
                     className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
