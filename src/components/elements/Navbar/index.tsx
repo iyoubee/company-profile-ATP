@@ -15,7 +15,6 @@ export const Navbar: React.FC = () => {
   const pathSplited = path.split('/')
 
   const locale = pathSplited[1] == 'en' ? 'en' : 'id'
-  console.log(locale)
 
   useEffect(() => {
     window.addEventListener('scroll', () =>
