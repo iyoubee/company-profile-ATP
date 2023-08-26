@@ -6,7 +6,7 @@ import React from 'react'
 export const PartnerCard: React.FC = () => {
   return (
     <>
-      <div className="w-full h-full py-[70px] px-[30px] bg-[url('/partnerBackground.svg')] flex justify-center flex-col gap-[24px]">
+      <div className="w-full h-full py-[70px] px-[30px] bg-[url('/partnerBackground.svg')] flex justify-center bg-cover bg-no-repeat flex-col gap-[24px]">
         <div className="flex items-center gap-4">
           <div className="relative w-[56px] h-[56px] rounded-full">
             <Image

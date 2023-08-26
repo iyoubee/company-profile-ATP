@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import '../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import { useTranslations } from 'next-intl'
@@ -61,7 +60,7 @@ export const ProductIndex: React.FC = () => {
             </Reveal>
           </button>
           <button
-            className="bg-[#294696] p-[6px] rounded-full absolute top-[70px] -right-0 rotate-180"
+            className="bg-[#294696] p-[6px] rounded-full absolute top-[70px] right-1 rotate-180"
             onClick={next}
           >
             <Reveal>
@@ -71,7 +70,7 @@ export const ProductIndex: React.FC = () => {
           <Reveal>
             <div>
               <div className=" w-full">
-                <Slider {...settings} ref={sliderRef} className="gap-5">
+                <Slider {...settings} ref={sliderRef} className="product">
                   <div className="w-[260px] h-[160px] relative">
                     <Image
                       src={'/placeholder.jpeg'}
