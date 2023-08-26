@@ -1,13 +1,17 @@
 'use client'
-import { Menu } from '@mantine/core'
+import { Burger, Menu } from '@mantine/core'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { ChevronDown, FlagId, FlagUs } from '@/components/icons'
 import { useTranslations } from 'next-intl'
+import { useDisclosure } from '@mantine/hooks'
 
 export const Navbar: React.FC = () => {
+  const [opened, { toggle }] = useDisclosure(false)
+  const label = opened ? 'Close navigation' : 'Open navigation'
+
   const [scroll, setScroll] = useState(false)
 
   const path = usePathname()
@@ -44,19 +48,39 @@ export const Navbar: React.FC = () => {
         return 'error'
     }
   }
+  const renderMenu2 = (id: string) => {
+    switch (id) {
+      case 'en':
+        return (
+          <>
+            US <FlagUs />
+          </>
+        )
+
+      case 'id':
+        return (
+          <>
+            ID <FlagId />
+          </>
+        )
+
+      default:
+        return 'error'
+    }
+  }
 
   return (
     <>
       <div
-        className={`bg-[#294696] h-[90px] w-full drop-shadow-sm shadow-lg flex justify-between sticky top-0 transition-all duration-1000 z-50 items-center ${
+        className={`bg-[#294696] h-[50px] lg:h-[90px] w-full drop-shadow-sm shadow-lg flex justify-between sticky top-0 transition-all duration-1000 z-50 items-center ${
           scroll
-            ? 'md:top-1 md:scale-[0.99] lg:top-2 px-[75px] rounded-full'
-            : 'px-20 top-0 scale-100 rounded-none'
+            ? 'lg:scale-[0.99] top-0 lg:top-2 lg:px-[75px] lg:rounded-full'
+            : 'lg:px-20 top-0 scale-100 rounded-none'
         }`}
       >
-        <Link href={'/'}>
+        <Link href={'/'} className="scale-50 lg:scale-100">
           <div className="flex gap-2">
-            <div className="relative w-[54px] h-[54px] rounded-full border-2 border-[#D2E9F2]">
+            <div className=" relative w-[54px] h-[54px] rounded-full border-2 border-[#D2E9F2]">
               <Image
                 src={'/ATPLogo.svg'}
                 fill
@@ -67,7 +91,7 @@ export const Navbar: React.FC = () => {
             <p className="text-[#D2E9F2] font-bold text-[36px]">ATP</p>
           </div>
         </Link>
-        <div className="flex gap-5">
+        <div className="lg:flex gap-5 hidden">
           <Link
             href={'/'}
             className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
@@ -93,23 +117,81 @@ export const Navbar: React.FC = () => {
             {t('4')}
           </Link>
         </div>
-        <Menu shadow="md" width={100}>
-          <Menu.Target>
-            <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded gap-1">
-              {renderMenu(locale)} <ChevronDown />
-            </button>
-          </Menu.Target>
+        <div className="hidden lg:block">
+          <Menu shadow="md" width={100}>
+            <Menu.Target>
+              <button className="flex items-center text-[14px] text-[#344054] font-semibold bg-[#D6E8F2] py-1 px-3 rounded gap-1">
+                {renderMenu(locale)} <ChevronDown />
+              </button>
+            </Menu.Target>
 
-          <Menu.Dropdown>
-            <Link href={locale == 'en' ? '/id' : '/en'}>
+            <Menu.Dropdown>
+              <Link href={locale == 'en' ? '/id' : '/en'}>
+                <Menu.Item>
+                  <div className="flex items-center gap-1">
+                    {locale == 'en' ? renderMenu('id') : renderMenu('en')}
+                  </div>
+                </Menu.Item>
+              </Link>
+            </Menu.Dropdown>
+          </Menu>
+        </div>
+        <div className="mr-5 lg:mr-0 lg:hidden">
+          <Menu shadow="md" opened={opened}>
+            <Menu.Target>
+              <Burger
+                opened={opened}
+                onClick={toggle}
+                aria-label={label}
+                color="white"
+              />
+            </Menu.Target>
+            <Menu.Dropdown>
               <Menu.Item>
-                <div className="flex items-center gap-1">
-                  {locale == 'en' ? renderMenu('id') : renderMenu('en')}
-                </div>
+                <Link
+                  href={'/'}
+                  className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
+                >
+                  {t('1')}
+                </Link>
               </Menu.Item>
-            </Link>
-          </Menu.Dropdown>
-        </Menu>
+              <Menu.Item>
+                <Link
+                  href={'/'}
+                  className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
+                >
+                  {t('2')}
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link
+                  href={'/'}
+                  className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
+                >
+                  {t('3')}
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link
+                  href={'/'}
+                  className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
+                >
+                  {t('4')}
+                </Link>
+              </Menu.Item>
+              <Link href={locale == 'en' ? '/id' : '/en'}>
+                <Menu.Item>
+                  <div
+                    className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
+                  >
+                    Change to{' '}
+                    {locale == 'en' ? renderMenu2('id') : renderMenu2('en')}
+                  </div>
+                </Menu.Item>
+              </Link>
+            </Menu.Dropdown>
+          </Menu>
+        </div>
       </div>
     </>
   )

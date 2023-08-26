@@ -20,9 +20,18 @@ export const PartnerIndex: React.FC = () => {
 
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     arrows: false,
     slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+  }
+
+  const settings2 = {
+    infinite: true,
+    speed: 1000,
+    arrows: false,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
   }
@@ -30,29 +39,55 @@ export const PartnerIndex: React.FC = () => {
   return (
     <>
       <div className="w-full mt-[128px]">
-        <Reveal>
-          <Slider {...settings} ref={sliderRef} className="tes">
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-            <div className="w-[480px] h-[360px]">
-              <PartnerCard />
-            </div>
-          </Slider>
-        </Reveal>
-        <div className="w-full px-20 py-[32px] bg-[#73A1C3] relative">
+        <div className="hidden lg:block">
+          <Reveal>
+            <Slider {...settings} ref={sliderRef} className="tes">
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px] lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+            </Slider>
+          </Reveal>
+        </div>
+        <div className="lg:hidden">
+          <Reveal>
+            <Slider {...settings2} ref={sliderRef} className="tes">
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+              <div className="w-[480px] lg:h-[500px] xl:h-[360px]">
+                <PartnerCard />
+              </div>
+            </Slider>
+          </Reveal>
+        </div>
+        <div className="w-full px-5 md:px-20 py-[32px] bg-[#73A1C3] relative">
           <button
             className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20"
             onClick={prev}
@@ -70,11 +105,11 @@ export const PartnerIndex: React.FC = () => {
             </Reveal>
           </button>
           <Reveal>
-            <div className="flex gap-[64px]">
-              <p className="text-[#294696] text-[64px] font-bold leading-[86.4px] flex-none">
+            <div className="flex gap-3 lg:gap-[64px] flex-col lg:flex-row">
+              <p className="text-[#294696] text-[32px] md:text-[64px] font-bold leading-[43.2px] md:leading-[86.4px] flex-none">
                 Partner Kami
               </p>
-              <p className="text-[#FFFAEB] font-medium text-[18px] text-justify leading-[24.3px]">
+              <p className="text-[#FFFAEB] font-medium md:text-[18px] text-justify leading-[24.3px]">
                 Kami sangat berterima kasih atas testimoni positif dari
                 pelanggan kami. Kami selalu bekerja keras untuk meningkatkan
                 produk dan layanan kami, dan menjadi kepuasan bagi kami ketika

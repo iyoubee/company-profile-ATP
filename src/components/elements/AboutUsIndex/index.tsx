@@ -10,7 +10,7 @@ export const AboutUsIndex: React.FC = () => {
   return (
     <>
       <div className="relative">
-        <div className="w-full absolute xl:top-60 ">
+        <div className="w-full lg:absolute xl:top-60 hidden">
           <div className="aspect-map w-full relative">
             <Image
               src={'/indonesia.svg'}
@@ -20,22 +20,27 @@ export const AboutUsIndex: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-full p-20">
+        <div className="w-full md:p-20 p-5">
           <Reveal>
-            <p className="text-[#83764F] font-bold text-[48px]">{t('title')}</p>
+            <p className="text-[#83764F] font-bold md:text-[48px] text-[24px]">
+              {t('title')}
+            </p>
           </Reveal>
           <Reveal>
-            <p className="text-[#294696] font-bold text-[64px]">{t('comp')}</p>
+            <p className="text-[#294696] font-bold md:text-[64px] text-[32px]">
+              {t('comp')}
+            </p>
           </Reveal>
-          <div className="w-full flex mt-[32px] h-[468px] relative">
-            <div className="w-2/5 relative px-10">
+          <div className="w-full flex mt-[32px] xl:h-[468px] relative flex-col xl:flex-row">
+            <div className="xl:w-2/5 w-full h-[338px] xl:h-auto relative px-10">
               <Image
                 src={'/kopi.svg'}
                 fill
                 className="object-contain relative"
                 alt="Assets"
               />
-              <div className="absolute bg-[#294696] text-[#E9E0D7] rounded-[16px] flex left-2/3 divide-x-2 -bottom-10">
+
+              <div className="absolute bg-[#294696] text-[#E9E0D7] rounded-[16px] xl:flex left-2/3 divide-x-2 -bottom-10 hidden">
                 <Reveal>
                   <div className="w-[283px] px-[32px] py-[24px] flex items-center gap-2">
                     <p className="text-[36px] font-bold">1200+</p>
@@ -56,19 +61,41 @@ export const AboutUsIndex: React.FC = () => {
                 </Reveal>
               </div>
             </div>
-            <div className="w-3/5 flex flex-col gap-[16px] items-end">
+            <Reveal>
+              <div className="bg-[#294696] text-[#E9E0D7] rounded-[16px] flex divide-x-2 xl:hidden w-full mt-[16px]">
+                <div className="w-1/3 md:p-[16px] p-2">
+                  <p className="text-base md:text-[36px] font-bold">1200+</p>
+                  <p className="font-semibold text-xs md:text-[16px] mt-1">
+                    {t('partners')}
+                  </p>
+                </div>
+                <div className="w-1/3 md:p-[16px] p-2">
+                  <p className="text-base md:text-[36px] font-bold">26+</p>
+                  <p className="font-semibold text-xs md:text-[16px] mt-1">
+                    {t('prod')}
+                  </p>
+                </div>
+                <div className="w-1/3 md:p-[16px] p-2">
+                  <p className="text-base md:text-[36px] font-bold">25+</p>
+                  <p className="font-semibold text-xs md:text-[16px] mt-1">
+                    {t('country')}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <div className="xl:w-3/5 w-full flex flex-col gap-[16px] items-end mt-10 xl:mt-0">
               <Reveal>
-                <p className="text-[#525C60] font-medium text-[18px]">
+                <p className="text-[#525C60] font-medium md:text-[18px] text-[12px] text-justify">
                   {t('desc1')}
                 </p>
               </Reveal>
               <Reveal>
-                <p className="text-[#525C60] font-medium text-[18px]">
+                <p className="text-[#525C60] font-medium md:text-[18px] text-[12px] text-justify">
                   {t('desc2')}
                 </p>
               </Reveal>
               <Reveal>
-                <button className="text-[#294696] text-[20px] font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full">
+                <button className="text-[#294696] text-[20px] font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-full">
                   {t('button')}
                 </button>
               </Reveal>
