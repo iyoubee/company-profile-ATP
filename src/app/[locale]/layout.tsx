@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import RootStyleRegistry from '@/emotion'
 import { LanguageContextProvider, Navbar } from '@/components'
+import { Footer } from '@/components/elements/Footer'
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
                 <div className="relative max-w-[1920px] flex-none w-full text-black">
                   <Navbar />
                   {children}
+                  <Footer />
                 </div>
               </div>
             </RootStyleRegistry>
