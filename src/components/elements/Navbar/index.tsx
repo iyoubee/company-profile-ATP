@@ -5,12 +5,10 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { ChevronDown, FlagId, FlagUs } from '@/components/icons'
 import { useTranslations } from 'next-intl'
-import { useDisclosure } from '@mantine/hooks'
 import { useLanguageContext } from '@/components/contexts'
 
 export const Navbar: React.FC = () => {
-  const [opened, { toggle }] = useDisclosure(false)
-  const label = opened ? 'Close navigation' : 'Open navigation'
+  const [opened, setOpened] = useState(false)
 
   const [scroll, setScroll] = useState(false)
 
@@ -136,12 +134,11 @@ export const Navbar: React.FC = () => {
           </Menu>
         </div>
         <div className="mr-5 lg:mr-0 lg:hidden">
-          <Menu shadow="md" opened={opened}>
+          <Menu shadow="md" opened={opened} onChange={setOpened}>
             <Menu.Target>
               <Burger
                 opened={opened}
-                onClick={toggle}
-                aria-label={label}
+                onClick={() => setOpened(opened)}
                 color="white"
               />
             </Menu.Target>
