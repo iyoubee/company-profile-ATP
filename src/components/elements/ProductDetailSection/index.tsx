@@ -1,8 +1,22 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
+import '../../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
+import { Arrow } from '@/components/icons'
 
 export const ProductDetailSection: React.FC = () => {
+  const sliderRef = useRef<Slider | null>(null)
+
+  const next = () => {
+    sliderRef.current?.slickNext()
+  }
+
+  const prev = () => {
+    sliderRef.current?.slickPrev()
+  }
+
   return (
     <>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
@@ -40,6 +54,84 @@ export const ProductDetailSection: React.FC = () => {
                 mattis et nunc tempor mi.
               </p>
             </div>
+          </div>
+          {/* History */}
+          <div className="w-full mt-[40px]">
+            <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold">
+              History
+            </p>
+            <div className="aspect-[2/1] w-full relative">
+              <button
+                className="w-fit h-fit absolute -bottom-7 md:left-1/3 left-5 z-10"
+                onClick={prev}
+              >
+                <Arrow />
+              </button>
+              <button
+                className="w-fit h-fit absolute -bottom-7 md:right-1/3 right-5 z-10 rotate-180"
+                onClick={next}
+              >
+                <Arrow />
+              </button>
+              <Slider
+                infinite
+                speed={1000}
+                arrows={false}
+                slidesToShow={1}
+                slidesToScroll={1}
+                autoplay
+                autoplaySpeed={10000}
+                dots
+                ref={sliderRef}
+                className="w-full"
+              >
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+              </Slider>
+            </div>
+            <p className="mt-10 text-center text-[#475467] text-[16px] leading-[21.6px]">
+              Lorem ipsum dolor sit amet consectetur. Sed pulvinar volutpat
+              volutpat venenatis a. Suscipit ornare sed quisque enim purus
+              adipiscing vitae fames. Lacus ac hac lectus eu.
+            </p>
           </div>
         </div>
       </div>
