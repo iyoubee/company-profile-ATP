@@ -8,8 +8,25 @@ import { Arrow, ChevronWhiteBig, Plant } from '@/components/icons'
 import { Reveal } from '../Reveal'
 import { Accordion, Text } from '@mantine/core'
 import { IconPlus } from '@tabler/icons-react'
+import { useInView } from 'framer-motion'
+import { SidenavAnimate } from '../SidenavAnimate'
 
 export const ProductDetailSection: React.FC = () => {
+  const refIntro = useRef(null)
+  const isInViewIntro = useInView(refIntro)
+
+  const refHistory = useRef(null)
+  const isInViewHistory = useInView(refHistory)
+
+  const refProduction = useRef(null)
+  const isInViewProduction = useInView(refProduction)
+
+  const refHowTo = useRef(null)
+  const isInViewHowTo = useInView(refHowTo)
+
+  const refFaq = useRef(null)
+  const isInViewFaq = useInView(refFaq)
+
   const [nav1, setNav1] = useState<Slider | undefined>()
   const [nav2, setNav2] = useState<Slider | undefined>()
   const sliderRef = useRef<Slider | null>(null)
@@ -30,13 +47,73 @@ export const ProductDetailSection: React.FC = () => {
     nav1?.slickPrev()
   }
 
+  const scrollTo = (id: string) => {
+    const intro = document.getElementById(id)
+    const elementPosition = intro?.getBoundingClientRect().top as number
+    const navbarOffset = 100
+    const offsetPosition = elementPosition + window.scrollY - navbarOffset
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
+  }
+
   return (
     <>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
-        <div className="lg:w-1/4 w-full"></div>
+        {/* Nav */}
+        <div className="lg:w-1/4 w-full relative">
+          <div className="sticky w-full top-[120px] flex flex-col gap-[16px]">
+            <SidenavAnimate
+              isInView={isInViewIntro}
+              scrollTo={() => {
+                scrollTo('intro')
+              }}
+            >
+              Introduction
+            </SidenavAnimate>
+            <SidenavAnimate
+              isInView={isInViewHistory}
+              scrollTo={() => {
+                scrollTo('history')
+              }}
+            >
+              History
+            </SidenavAnimate>
+            <SidenavAnimate
+              isInView={isInViewProduction}
+              scrollTo={() => {
+                scrollTo('production')
+              }}
+            >
+              Production
+            </SidenavAnimate>
+            <SidenavAnimate
+              isInView={isInViewHowTo}
+              scrollTo={() => {
+                scrollTo('howTo')
+              }}
+            >
+              How do we produce our product
+            </SidenavAnimate>
+            <SidenavAnimate
+              isInView={isInViewFaq}
+              scrollTo={() => {
+                scrollTo('faq')
+              }}
+            >
+              Frequently Asked Question
+            </SidenavAnimate>
+
+            <p className="text-[#667085] text-[20px] leading-[27px] cursor-pointer">
+              Product list
+            </p>
+          </div>
+        </div>
         <div className="lg:w-3/4 w-full flex flex-col gap-20">
           {/* Intro */}
-          <div className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify">
+          <div
+            className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify"
+            id="intro"
+            ref={refIntro}
+          >
             <div className="lg:w-1/2 w-full flex flex-col gap-[10px]">
               <p className="text-[#294696] font-bold text-[32px] md:text-[48px]">
                 Introduction
@@ -69,7 +146,7 @@ export const ProductDetailSection: React.FC = () => {
             </div>
           </div>
           {/* History */}
-          <div className="w-full mt-[40px]">
+          <div className="w-full mt-[40px]" id="history" ref={refHistory}>
             <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
               History
             </p>
@@ -147,7 +224,7 @@ export const ProductDetailSection: React.FC = () => {
             </p>
           </div>
           {/* Production */}
-          <div className="w-full mt-[40px]">
+          <div className="w-full mt-[40px]" id="production" ref={refProduction}>
             <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
               Production
             </p>
@@ -218,7 +295,7 @@ export const ProductDetailSection: React.FC = () => {
             </div>
           </div>
           {/* How To */}
-          <div className="w-full mt-[40px]">
+          <div className="w-full mt-[40px]" id="howTo" ref={refHowTo}>
             <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
               How Do We Produce
             </p>
@@ -383,7 +460,7 @@ export const ProductDetailSection: React.FC = () => {
             </div>
           </div>
           {/* FAQ */}
-          <div className="w-full mt-[40px]">
+          <div className="w-full mt-[40px]" id="faq" ref={refFaq}>
             <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
               Frequently Asked Question
             </p>
