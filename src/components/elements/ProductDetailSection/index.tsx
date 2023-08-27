@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import '../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
-import { Arrow } from '@/components/icons'
+import { Arrow, Plant } from '@/components/icons'
 
 export const ProductDetailSection: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null)
@@ -21,7 +21,7 @@ export const ProductDetailSection: React.FC = () => {
     <>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
         <div className="lg:w-1/4 w-full"></div>
-        <div className="lg:w-3/4 w-full">
+        <div className="lg:w-3/4 w-full flex flex-col gap-20">
           {/* Intro */}
           <div className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify">
             <div className="lg:w-1/2 w-full flex flex-col gap-[10px]">
@@ -57,7 +57,7 @@ export const ProductDetailSection: React.FC = () => {
           </div>
           {/* History */}
           <div className="w-full mt-[40px]">
-            <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold">
+            <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
               History
             </p>
             <div className="aspect-[2/1] w-full relative">
@@ -132,6 +132,77 @@ export const ProductDetailSection: React.FC = () => {
               volutpat venenatis a. Suscipit ornare sed quisque enim purus
               adipiscing vitae fames. Lacus ac hac lectus eu.
             </p>
+          </div>
+          {/* Production */}
+          <div className="w-full mt-[40px]">
+            <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
+              Production
+            </p>
+            <div className="w-full flex flex-col md:flex-row gap-[16px] h-[418.53px] md:h-[270px]">
+              <div className="md:w-1/4 w-full h-1/4 md:h-full relative rounded-lg">
+                <Image
+                  src={'/placeholder.jpeg'}
+                  alt="placeholder"
+                  fill
+                  className="object-cover rounded-lg relative"
+                />
+              </div>
+              <div className="md:w-1/2 w-full h-1/2 md:h-full flex gap-[16px]">
+                <div className="w-1/2 h-full flex flex-col gap-[16px]">
+                  <div className="w-full h-3/5 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute left-0 bottom-0 z-0">
+                      <Plant />
+                    </div>
+                    <p className="text-[#E9E0D7] text-[47.49px] lg:text-[64px] font-bold leading-[64.12px] md:leading-[86.4px] z-10">
+                      88%
+                    </p>
+                    <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
+                      Sulawesi
+                    </p>
+                  </div>
+                  <div className="w-full h-2/5 relative rounded-lg">
+                    <Image
+                      src={'/placeholder.jpeg'}
+                      alt="placeholder"
+                      fill
+                      className="object-cover rounded-lg relative"
+                    />
+                  </div>
+                </div>
+                <div className="w-1/2 h-full flex flex-col gap-[16px]">
+                  <div className="w-full h-1/2 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute left-0 bottom-0 z-0">
+                      <Plant />
+                    </div>
+                    <p className="text-[#E9E0D7] text-[35.62px] lg:text-[48px] font-bold leading-[48.09px] md:leading-[64.8px] z-10">
+                      10%
+                    </p>
+                    <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
+                      Sumatra
+                    </p>
+                  </div>
+                  <div className="w-full h-1/2 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute left-0 bottom-0 z-0">
+                      <Plant />
+                    </div>
+                    <p className="text-[#E9E0D7] text-[35.62px] lg:text-[48px] font-bold leading-[48.09px] md:leading-[64.8px] z-10">
+                      2%
+                    </p>
+                    <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
+                      Java
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-1/4 w-full md:h-full h-1/4 relative rounded-lg">
+                <Image
+                  src={'/placeholder.jpeg'}
+                  alt="placeholder"
+                  fill
+                  className="object-cover relative rounded-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
