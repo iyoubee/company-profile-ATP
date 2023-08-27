@@ -59,7 +59,7 @@ export const ProductDetailSection: React.FC = () => {
     <>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
         {/* Nav */}
-        <div className="lg:w-1/4 w-full relative">
+        <div className="lg:w-1/4 hidden lg:block relative">
           <div className="sticky w-full top-[120px] flex flex-col gap-[16px]">
             <SidenavAnimate
               isInView={isInViewIntro}
@@ -175,61 +175,59 @@ export const ProductDetailSection: React.FC = () => {
                   <Arrow />
                 </Reveal>
               </button>
-              <Reveal>
-                <Slider
-                  infinite
-                  speed={1000}
-                  arrows={false}
-                  slidesToShow={1}
-                  slidesToScroll={1}
-                  autoplay
-                  autoplaySpeed={10000}
-                  dots
-                  ref={sliderRef}
-                  className="w-full"
-                >
-                  <div className="w-full aspect-[2/1] relative">
-                    <Image
-                      src={'/placeholder.jpeg'}
-                      fill
-                      alt="placeholder"
-                      className="object-cover relative"
-                    />
-                  </div>
-                  <div className="w-full aspect-[2/1] relative">
-                    <Image
-                      src={'/placeholder.jpeg'}
-                      fill
-                      alt="placeholder"
-                      className="object-cover relative"
-                    />
-                  </div>
-                  <div className="w-full aspect-[2/1] relative">
-                    <Image
-                      src={'/placeholder.jpeg'}
-                      fill
-                      alt="placeholder"
-                      className="object-cover relative"
-                    />
-                  </div>
-                  <div className="w-full aspect-[2/1] relative">
-                    <Image
-                      src={'/placeholder.jpeg'}
-                      fill
-                      alt="placeholder"
-                      className="object-cover relative"
-                    />
-                  </div>
-                  <div className="w-full aspect-[2/1] relative">
-                    <Image
-                      src={'/placeholder.jpeg'}
-                      fill
-                      alt="placeholder"
-                      className="object-cover relative"
-                    />
-                  </div>
-                </Slider>
-              </Reveal>
+              <Slider
+                infinite
+                speed={1000}
+                arrows={false}
+                slidesToShow={1}
+                slidesToScroll={1}
+                autoplay
+                autoplaySpeed={10000}
+                dots
+                ref={sliderRef}
+                className="w-full"
+              >
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+                <div className="w-full aspect-[2/1] relative">
+                  <Image
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
+                </div>
+              </Slider>
             </div>
             <Reveal>
               <p className="mt-10 text-center text-[#475467] text-[16px] leading-[21.6px]">
