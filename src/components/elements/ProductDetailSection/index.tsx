@@ -6,6 +6,8 @@ import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { Arrow, ChevronWhiteBig, Plant } from '@/components/icons'
 import { Reveal } from '../Reveal'
+import { Accordion, Text } from '@mantine/core'
+import { IconPlus } from '@tabler/icons-react'
 
 export const ProductDetailSection: React.FC = () => {
   const [nav1, setNav1] = useState<Slider | undefined>()
@@ -217,7 +219,7 @@ export const ProductDetailSection: React.FC = () => {
           </div>
           {/* How To */}
           <div className="w-full mt-[40px]">
-            <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
+            <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
               How Do We Produce
             </p>
             <div className="w-full bg-[#294696] rounded-[20px] p-[24px] flex justify-between flex-col xl:flex-row gap-[24px] transition-all">
@@ -379,6 +381,64 @@ export const ProductDetailSection: React.FC = () => {
                 </div>
               </div>
             </div>
+          </div>
+          {/* FAQ */}
+          <div className="w-full mt-[40px]">
+            <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
+              Frequently Asked Question
+            </p>
+            <Accordion
+              defaultValue="customization"
+              chevron={<IconPlus size="1rem" />}
+              styles={{
+                chevron: {
+                  '&[data-rotate]': {
+                    transform: 'rotate(45deg)',
+                    color: '#294696',
+                  },
+                },
+                control: {
+                  color: '#344054',
+                  '&[data-active]': {
+                    color: '#294696',
+                  },
+                },
+                content: {
+                  color: '#475467',
+                  fontSize: 16,
+                },
+              }}
+            >
+              <Accordion.Item value="customization">
+                <Accordion.Control>
+                  <Text fw={700}>Customization</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  Colors, fonts, shadows and many other parts are customizable
+                  to fit your design needs
+                </Accordion.Panel>
+              </Accordion.Item>
+
+              <Accordion.Item value="flexibility">
+                <Accordion.Control>
+                  <Text fw={700}>Flexibility</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  Configure components appearance and behavior with vast amount
+                  of settings or overwrite any part of component styles
+                </Accordion.Panel>
+              </Accordion.Item>
+
+              <Accordion.Item value="focus-ring">
+                <Accordion.Control>
+                  <Text fw={700}>No annoying focus ring</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  With new :focus-visible pseudo-class focus ring appears only
+                  when user navigates with keyboard
+                </Accordion.Panel>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
       </div>
