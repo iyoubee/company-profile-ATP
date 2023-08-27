@@ -5,7 +5,7 @@ export const HeroProductDetail: React.FC = () => {
 
   return (
     <>
-      <div className='md:aspect-[3/1] aspect-square w-full bg-[url("/kopiHeroBg.svg")] bg-cover bg-no-repeat bg-center md:px-20 p-5 flex flex-col md:justify-center justify-end'>
+      <div className='md:aspect-[3/1] h-screen pb-[70px] md:pb-0 pl-10 md:h-auto w-full bg-[url("/kopiHeroBg.svg")] bg-cover bg-no-repeat bg-center md:px-20 p-5 flex flex-col md:justify-center justify-end'>
         <p className="lg:text-[96px] text-[48px] lg:leading-[129.6px] leading-[64.8px] font-bold text-[#E9E0D7]">
           Kopi
         </p>
