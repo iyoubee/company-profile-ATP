@@ -89,7 +89,7 @@ export const PartnerIndex: React.FC = () => {
         </div>
         <div className="w-full px-5 md:px-20 py-[32px] bg-[#73A1C3] relative">
           <button
-            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20"
+            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20 text-white"
             onClick={prev}
           >
             <Reveal>
@@ -97,7 +97,7 @@ export const PartnerIndex: React.FC = () => {
             </Reveal>
           </button>
           <button
-            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 right-20 rotate-180"
+            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 right-20 rotate-180 text-white"
             onClick={next}
           >
             <Reveal>
