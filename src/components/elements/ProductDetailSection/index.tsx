@@ -1,12 +1,17 @@
 'use client'
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import '../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
-import { Arrow, Plant } from '@/components/icons'
+import { Arrow, ChevronWhiteBig, Plant } from '@/components/icons'
+import { Reveal } from '../Reveal'
+import { Accordion, Text } from '@mantine/core'
+import { IconPlus } from '@tabler/icons-react'
 
 export const ProductDetailSection: React.FC = () => {
+  const [nav1, setNav1] = useState<Slider | undefined>()
+  const [nav2, setNav2] = useState<Slider | undefined>()
   const sliderRef = useRef<Slider | null>(null)
 
   const next = () => {
@@ -15,6 +20,14 @@ export const ProductDetailSection: React.FC = () => {
 
   const prev = () => {
     sliderRef.current?.slickPrev()
+  }
+
+  const next2 = () => {
+    nav1?.slickNext()
+  }
+
+  const prev2 = () => {
+    nav1?.slickPrev()
   }
 
   return (
@@ -203,6 +216,229 @@ export const ProductDetailSection: React.FC = () => {
                 />
               </div>
             </div>
+          </div>
+          {/* How To */}
+          <div className="w-full mt-[40px]">
+            <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
+              How Do We Produce
+            </p>
+            <div className="w-full bg-[#294696] rounded-[20px] p-[24px] flex justify-between flex-col xl:flex-row gap-[24px] transition-all">
+              <div className="lg:min-w-[333px]">
+                <Slider
+                  infinite
+                  speed={1000}
+                  arrows={false}
+                  slidesToShow={1}
+                  slidesToScroll={1}
+                  autoplay
+                  autoplaySpeed={10000}
+                  dots={false}
+                  asNavFor={nav1}
+                  ref={(slider2) => setNav2(slider2 as Slider)}
+                  className="w-full"
+                >
+                  <div>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Step 1:
+                    </p>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Plantation
+                    </p>
+                    <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                      Make quick fixes based on the feedbacks youve recived.
+                      With a happy smile. Make quick fixes based on the
+                      feedbacks youve recived. With a happy smile.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Step 2:
+                    </p>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Plantation
+                    </p>
+                    <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                      Make quick fixes based on the feedbacks youve recived.
+                      With a happy smile. Make quick fixes based on the
+                      feedbacks youve recived. With a happy smile.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Step 3:
+                    </p>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Plantation
+                    </p>
+                    <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                      Make quick fixes based on the feedbacks youve recived.
+                      With a happy smile. Make quick fixes based on the
+                      feedbacks youve recived. With a happy smile.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Step 4:
+                    </p>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Plantation
+                    </p>
+                    <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                      Make quick fixes based on the feedbacks youve recived.
+                      With a happy smile. Make quick fixes based on the
+                      feedbacks youve recived. With a happy smile.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Step 5:
+                    </p>
+                    <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                      Plantation
+                    </p>
+                    <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                      Make quick fixes based on the feedbacks youve recived.
+                      With a happy smile. Make quick fixes based on the
+                      feedbacks youve recived. With a happy smile.
+                    </p>
+                  </div>
+                </Slider>
+                <div className="w-full flex gap-5 justify-end mt-10">
+                  <button
+                    className="bg-[#E9E0D7] p-[6px] rounded-full text-[#294696]"
+                    onClick={prev2}
+                  >
+                    <Reveal>
+                      <ChevronWhiteBig />
+                    </Reveal>
+                  </button>
+                  <button
+                    className="bg-[#E9E0D7] p-[6px] rounded-full rotate-180 text-[#294696]"
+                    onClick={next2}
+                  >
+                    <Reveal>
+                      <ChevronWhiteBig />
+                    </Reveal>
+                  </button>
+                </div>
+              </div>
+              <div className="w-full flex justify-center">
+                <div className="w-full md:w-[400px] 2xl:w-[480px]">
+                  <Slider
+                    infinite
+                    speed={1000}
+                    arrows={false}
+                    slidesToShow={1}
+                    slidesToScroll={1}
+                    autoplay
+                    autoplaySpeed={10000}
+                    dots
+                    asNavFor={nav2}
+                    ref={(slider1) => setNav1(slider1 as Slider)}
+                    className="w-full"
+                  >
+                    <div className="w-full aspect-[8/5] relative">
+                      <Image
+                        src={'/placeholder.jpeg'}
+                        fill
+                        alt="placeholder"
+                        className="object-cover relative"
+                      />
+                    </div>
+                    <div className="w-full aspect-[8/5] relative">
+                      <Image
+                        src={'/placeholder.jpeg'}
+                        fill
+                        alt="placeholder"
+                        className="object-cover relative"
+                      />
+                    </div>
+                    <div className="w-full aspect-[8/5] relative">
+                      <Image
+                        src={'/placeholder.jpeg'}
+                        fill
+                        alt="placeholder"
+                        className="object-cover relative"
+                      />
+                    </div>
+                    <div className="w-full aspect-[8/5] relative">
+                      <Image
+                        src={'/placeholder.jpeg'}
+                        fill
+                        alt="placeholder"
+                        className="object-cover relative"
+                      />
+                    </div>
+                    <div className="w-full aspect-[8/5] relative">
+                      <Image
+                        src={'/placeholder.jpeg'}
+                        fill
+                        alt="placeholder"
+                        className="object-cover relative"
+                      />
+                    </div>
+                  </Slider>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* FAQ */}
+          <div className="w-full mt-[40px]">
+            <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
+              Frequently Asked Question
+            </p>
+            <Accordion
+              defaultValue="customization"
+              chevron={<IconPlus size="1rem" />}
+              styles={{
+                chevron: {
+                  '&[data-rotate]': {
+                    transform: 'rotate(45deg)',
+                    color: '#294696',
+                  },
+                },
+                control: {
+                  color: '#344054',
+                  '&[data-active]': {
+                    color: '#294696',
+                  },
+                },
+                content: {
+                  color: '#475467',
+                  fontSize: 16,
+                },
+              }}
+            >
+              <Accordion.Item value="customization">
+                <Accordion.Control>
+                  <Text fw={700}>Customization</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  Colors, fonts, shadows and many other parts are customizable
+                  to fit your design needs
+                </Accordion.Panel>
+              </Accordion.Item>
+
+              <Accordion.Item value="flexibility">
+                <Accordion.Control>
+                  <Text fw={700}>Flexibility</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  Configure components appearance and behavior with vast amount
+                  of settings or overwrite any part of component styles
+                </Accordion.Panel>
+              </Accordion.Item>
+
+              <Accordion.Item value="focus-ring">
+                <Accordion.Control>
+                  <Text fw={700}>No annoying focus ring</Text>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  With new :focus-visible pseudo-class focus ring appears only
+                  when user navigates with keyboard
+                </Accordion.Panel>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
       </div>
