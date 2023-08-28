@@ -61,7 +61,10 @@
   },
   "About": {
     "hero": {
-      "title": "Tentang Kami"
+      "title": "Tentang Kami",
+      "moto": "Harmoni dari Kualitas dan Diversitas",
+      "story": "Perjalanan Kami",
+      "story-word": "Dimulai dari langkah kecil untuk mencipta dampak yang besar."
     }
   }
 }
