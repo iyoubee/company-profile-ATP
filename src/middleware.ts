@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware'
-import { NextRequest, NextResponse } from 'next/server'
+// import { NextRequest, NextResponse } from 'next/server'
 
 export default createMiddleware({
   // A list of all locales that are supported
@@ -10,11 +10,11 @@ export default createMiddleware({
   localePrefix: 'always',
 })
 
-export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone()
-  console.log(url.pathname)
-  return NextResponse.next()
-}
+// export function middleware(request: NextRequest) {
+//   const url = request.nextUrl.clone()
+//   console.log(url.pathname)
+//   return NextResponse.next()
+// }
 
 export const config = {
   // Skip all paths that should not be internationalized. This example skips the
