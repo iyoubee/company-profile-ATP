@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
                 <div className="text-[#D6E8F2] font-bold text-4xl mb-2 flex gap-2">
                   <div className="">
                     <Image
-                      className="relative"
+                      className=""
                       alt="CompanyLogo"
                       width={50}
                       height={50}
