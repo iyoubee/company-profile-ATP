@@ -59,6 +59,48 @@ export const ProductDetailSection: React.FC = () => {
     <>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
         {/* Nav */}
+        <div className="lg:hidden w-full sticky top-[50px] flex overflow-x-auto z-20 bg-white py-3 gap-5 scrollbar-hidden">
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewIntro && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('intro')}
+          >
+            Introduction
+          </p>
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewHistory && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('history')}
+          >
+            History
+          </p>
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewProduction && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('production')}
+          >
+            Production
+          </p>
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewHowTo && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('howTo')}
+          >
+            How do we produce our product
+          </p>
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewFaq && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('faq')}
+          >
+            Frequently Asked Question
+          </p>
+        </div>
         <div className="lg:w-1/4 hidden lg:block relative">
           <div className="sticky w-full top-[120px] flex flex-col gap-[16px]">
             <SidenavAnimate
@@ -107,7 +149,7 @@ export const ProductDetailSection: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="lg:w-3/4 w-full flex flex-col gap-20">
+        <div className="lg:w-3/4 w-full flex flex-col gap-10 mg:gap-20">
           {/* Intro */}
           <div
             className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify"
@@ -152,7 +194,7 @@ export const ProductDetailSection: React.FC = () => {
             </div>
           </div>
           {/* History */}
-          <div className="w-full mt-[40px]" id="history" ref={refHistory}>
+          <div className="w-full" id="history" ref={refHistory}>
             <Reveal>
               <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
                 History
@@ -238,7 +280,7 @@ export const ProductDetailSection: React.FC = () => {
             </Reveal>
           </div>
           {/* Production */}
-          <div className="w-full mt-[40px]" id="production" ref={refProduction}>
+          <div className="w-full" id="production" ref={refProduction}>
             <Reveal>
               <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
                 Production
@@ -313,7 +355,7 @@ export const ProductDetailSection: React.FC = () => {
             </Reveal>
           </div>
           {/* How To */}
-          <div className="w-full mt-[40px]" id="howTo" ref={refHowTo}>
+          <div className="w-full" id="howTo" ref={refHowTo}>
             <Reveal>
               <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
                 How Do We Produce
@@ -482,7 +524,7 @@ export const ProductDetailSection: React.FC = () => {
             </Reveal>
           </div>
           {/* FAQ */}
-          <div className="w-full mt-[40px]" id="faq" ref={refFaq}>
+          <div className="w-full" id="faq" ref={refFaq}>
             <Reveal>
               <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
                 Frequently Asked Question
