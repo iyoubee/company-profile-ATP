@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React from 'react'
 
 export const Footer: React.FC = () => {
@@ -9,17 +10,25 @@ export const Footer: React.FC = () => {
           <div className="sm:flex sm:mt-8">
             <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between gap-4">
               <div className="flex flex-col w-full">
-                <span className="text-[#D6E8F2] font-bold text-4xl mb-2">
+                <div className="text-[#D6E8F2] font-bold text-4xl mb-2 flex gap-2">
+                  <div className=''>
+                    <Image
+                    className='relative'
+                    alt='CompanyLogo'
+                    width={50}
+                    height={50}
+                    src={'CompanyLogo.svg'}
+                    />
+                  </div>
                   PT. Aceng Tunggal Perkasa
-                </span>
+                </div>
                 <span className=" font-medium">
-                  <a
-                    href="#"
-                    className="text-[#D6E8F2]  text-md hover:text-blue-500"
+                  <p
+                    className="text-[#D6E8F2]  text-md"
                   >
                     Sustainably sourced, ethically processed, and made for your
                     satisfaction.
-                  </a>
+                  </p>
                 </span>
               </div>
               <div className="flex flex-col w-full lg:w-2/4">
@@ -27,27 +36,27 @@ export const Footer: React.FC = () => {
                   Temui Kami
                 </span>
                 <span className=" font-medium">
-                  <a
-                    href="#"
-                    className="text-[#D6E8F2]  text-md hover:text-blue-500"
-                  >
+                  <p
+                    className="text-[#D6E8F2]  text-md  "
+                  > 
                     Kedai Kopi Aceng, Jalan Agrowisata Tepas Papandayan Desa
                     Kramatwangi Kecamatan Cisurupan-Garut
-                  </a>
+                  </p>
                 </span>
               </div>
-              <div className="flex flex-col  w-full lg:w-2/4">
-                <span className="text-[#D6E8F2] font-bold text-4xl mb-2">
-                  Kontak Kami
-                </span>
-                <span className=" font-medium">
-                  <a
-                    href="#"
-                    className="text-[#D6E8F2]  text-md hover:text-blue-500"
-                  >
-                    +6281323583457
-                  </a>
-                </span>
+              <div className='flex lg:justify-center md:justify-center sm:justify-normal w-full lg:w-3/5'>
+                <div className="flex flex-col">
+                  <span className="text-[#D6E8F2] font-bold text-4xl mb-2">
+                    Kontak Kami
+                  </span>
+                  <span className=" font-medium">
+                    <p
+                      className="text-[#D6E8F2] text-md"
+                    >
+                      +6281323583457
+                    </p>
+                  </span>
+                </div>
               </div>
               <div className="flex flex-col  w-full lg:w-2/4">
                 <span className="text-[#D6E8F2] font-bold text-4xl mb-2">
@@ -66,7 +75,7 @@ export const Footer: React.FC = () => {
                     href="#"
                     className="text-[#D6E8F2]  text-md hover:text-blue-500"
                   >
-                    Instagram
+                    Facebook
                   </a>
                 </span>
               </div>
