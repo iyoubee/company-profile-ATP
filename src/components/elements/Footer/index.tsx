@@ -11,21 +11,19 @@ export const Footer: React.FC = () => {
             <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between gap-4">
               <div className="flex flex-col w-full">
                 <div className="text-[#D6E8F2] font-bold text-4xl mb-2 flex gap-2">
-                  <div className=''>
+                  <div className="">
                     <Image
-                    className='relative'
-                    alt='CompanyLogo'
-                    width={50}
-                    height={50}
-                    src={'CompanyLogo.svg'}
+                      className="relative"
+                      alt="CompanyLogo"
+                      width={50}
+                      height={50}
+                      src={'CompanyLogo.svg'}
                     />
                   </div>
                   PT. Aceng Tunggal Perkasa
                 </div>
                 <span className=" font-medium">
-                  <p
-                    className="text-[#D6E8F2]  text-md"
-                  >
+                  <p className="text-[#D6E8F2]  text-md">
                     Sustainably sourced, ethically processed, and made for your
                     satisfaction.
                   </p>
@@ -36,25 +34,19 @@ export const Footer: React.FC = () => {
                   Temui Kami
                 </span>
                 <span className=" font-medium">
-                  <p
-                    className="text-[#D6E8F2]  text-md  "
-                  > 
+                  <p className="text-[#D6E8F2]  text-md  ">
                     Kedai Kopi Aceng, Jalan Agrowisata Tepas Papandayan Desa
                     Kramatwangi Kecamatan Cisurupan-Garut
                   </p>
                 </span>
               </div>
-              <div className='flex lg:justify-center md:justify-center sm:justify-normal w-full lg:w-3/5'>
+              <div className="flex lg:justify-center md:justify-center sm:justify-normal w-full lg:w-3/5">
                 <div className="flex flex-col">
                   <span className="text-[#D6E8F2] font-bold text-4xl mb-2">
                     Kontak Kami
                   </span>
                   <span className=" font-medium">
-                    <p
-                      className="text-[#D6E8F2] text-md"
-                    >
-                      +6281323583457
-                    </p>
+                    <p className="text-[#D6E8F2] text-md">+6281323583457</p>
                   </span>
                 </div>
               </div>
