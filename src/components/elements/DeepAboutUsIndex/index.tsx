@@ -9,8 +9,8 @@ export const HeroAboutUsIndex: React.FC = () => {
   const t = useTranslations('About.hero')
   return (
     <>
-      <section className=' h-fit bg-[url("/AboutUsIndexAsset.svg")] bg-no-repeat bg-cover relative'>
-        <div className="md:p-20 p-5 pb-60 w-full flex justify-center">
+      <section className=' h-fit bg-[url("/AboutUsIndexAsset.svg")] bg-cover relative'>
+        <div className="md:p-20 p-5 pb-60 w-full flex justify-center relative z-20">
           <div className="   w-full flex flex-col gap-[24px]">
             <Reveal>
               <p className="text-[#E9E0D7] md:text-6xl text-4xl font-bold leading-[48.6px] md:leading-[80px] flex justify-center">
@@ -43,9 +43,12 @@ export const HeroAboutUsIndex: React.FC = () => {
               </p>
             </Reveal>
             <SliderAboutUs />
+            
           </div>
         </div>
+        
       </section>
+      <div className="h-2/3 bg-gradient-to-t from-white absolute bottom-0 w-full z-10]"></div>
     </>
   )
 }
