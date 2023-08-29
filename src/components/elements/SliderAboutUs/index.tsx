@@ -18,18 +18,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -40,18 +40,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -62,18 +62,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -84,18 +84,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -106,18 +106,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -128,18 +128,18 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
@@ -150,22 +150,21 @@ export const SliderAboutUs: React.FC = () => {
               className="absolute w-full h-[80px] lg:h-[120px] p-[15px] shadow-xl text-black  flex flex-col gap-2 justify-center items-center bg-[#E9E0D7] rounded-[16px]"
             >
               <span className="flex text-lg lg:text-3xl font-extrabold text-[#294696] w-full gap-2">
-              <div className="flex justify-center">
-                <Image
-                  src={'/TimeLineLogo.svg'}
-                  alt="TimeLineLogo"
-                  width={40}
-                  height={40}
-                />
-              </div>
+                <div className="flex justify-center">
+                  <Image
+                    src={'/TimeLineLogo.svg'}
+                    alt="TimeLineLogo"
+                    width={40}
+                    height={40}
+                  />
+                </div>
                 Title
               </span>
               <span className="font-semibold text-[8px] lg:text-lg text-[#004739]">
-              lorem lorem lorem lorem lorem lorem
+                lorem lorem lorem lorem lorem lorem
               </span>
             </div>
           </div>
-          
         </div>
       </div>
     </>
