@@ -1,4 +1,9 @@
-import { AboutUs, AboutUsMarquee, AboutUsProduct, HeroAboutUsIndex } from '@/components'
+import {
+  AboutUs,
+  AboutUsMarquee,
+  AboutUsProduct,
+  HeroAboutUsIndex,
+} from '@/components'
 
 export default function Product() {
   return (
