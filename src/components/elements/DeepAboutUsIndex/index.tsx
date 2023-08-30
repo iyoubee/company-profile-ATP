@@ -45,6 +45,7 @@ export const HeroAboutUsIndex: React.FC = () => {
             <SliderAboutUs />
           </div>
         </div>
+        <div className="h-1/4 bg-gradient-to-t from-white absolute bottom-0 w-full z-10"></div>
       </section>
     </>
   )
