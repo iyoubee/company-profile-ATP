@@ -43,10 +43,10 @@ export const HeroAboutUsIndex: React.FC = () => {
               </p>
             </Reveal>
             <SliderAboutUs />
+            
           </div>
         </div>
       </section>
-      <div className="h-2/3 bg-gradient-to-t from-white absolute bottom-0 w-full z-10]"></div>
     </>
   )
 }
