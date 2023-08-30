@@ -43,7 +43,6 @@ export const HeroAboutUsIndex: React.FC = () => {
               </p>
             </Reveal>
             <SliderAboutUs />
-            
           </div>
         </div>
       </section>
