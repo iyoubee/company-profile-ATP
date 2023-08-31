@@ -26,53 +26,57 @@ export const AboutUsProduct: React.FC = () => {
           </div>
           <div className=" w-5/12 z-20">
             <Slider
-            infinite
-            speed={1000}
-            arrows={true}
-            slidesToShow={1}
-            slidesToScroll={1}
-            autoplay
-            autoplaySpeed={10000}
-            dots
+              infinite
+              speed={1000}
+              arrows={true}
+              slidesToShow={1}
+              slidesToScroll={1}
+              autoplay
+              autoplaySpeed={10000}
+              dots
             >
-              <div className='w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl'>
-                <div className='relative h-[400px] w-full'>
+              <div className="w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl">
+                <div className="relative h-[400px] w-full">
                   <Image
-                        src={'/placeholder.jpeg'}
-                        fill
-                        alt="placeholder"
-                        className="object-cover relative"
-                      />
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
                 </div>
-                <p className='text-[#294696]'>{t('1')}</p>
+                <p className="text-[#294696]">{t('1')}</p>
               </div>
-              <div className='w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl'>
-                <div className='relative h-[400px] w-full'>
+              <div className="w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl">
+                <div className="relative h-[400px] w-full">
                   <Image
-                        src={'/placeholder.jpeg'}
-                        fill
-                        alt="placeholder"
-                        className="object-cover relative"
-                      />
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
                 </div>
-                <p className='text-[#294696]'>{t('2')}</p>
+                <p className="text-[#294696]">{t('2')}</p>
               </div>
-              <div className='w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl'>
-                <div className='relative h-[400px] w-full'>
+              <div className="w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl">
+                <div className="relative h-[400px] w-full">
                   <Image
-                        src={'/placeholder.jpeg'}
-                        fill
-                        alt="placeholder"
-                        className="object-cover relative"
-                      />
+                    src={'/placeholder.jpeg'}
+                    fill
+                    alt="placeholder"
+                    className="object-cover relative"
+                  />
                 </div>
-                <p className='text-[#294696]'>{t('3')}</p>
+                <p className="text-[#294696]">{t('3')}</p>
               </div>
-             
             </Slider>
           </div>
           <div className="">
-            <Image src={'/Vector.svg'} fill className=" translate-y-[175px]" alt="Assets" />
+            <Image
+              src={'/Vector.svg'}
+              fill
+              className=" translate-y-[175px]"
+              alt="Assets"
+            />
           </div>
         </div>
       </section>
