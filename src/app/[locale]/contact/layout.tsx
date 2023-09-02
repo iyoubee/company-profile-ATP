@@ -3,21 +3,21 @@ export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
 }
 
-interface AboutUsProps {
+interface ContactProps {
   children: React.ReactNode
   params: {
     locale: string
   }
 }
 
-export const generateMetadata = ({ params }: AboutUsProps): Metadata => {
-  const title = params.locale == 'en' ? 'About' : 'Tentang'
+export const generateMetadata = ({ params }: ContactProps): Metadata => {
+  const title = params.locale == 'en' ? 'Contact' : 'Kontang'
   return {
     title: `${title} | ATP`,
   }
 }
 
 
-export default async function AboutUsLayout({ children }: AboutUsProps) {
+export default async function AboutUsLayout({ children }: ContactProps) {
   return <>{children}</>
 }

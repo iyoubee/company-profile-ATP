@@ -59,6 +59,12 @@
       "asdasd": ""
     }
   },
+  "Contact": {
+    "title" : "Our Contact?",
+    "desc" : "Any question or remarks? Just write us a message!",
+    "locationTitle": "Contact Information",
+    "locationDesc" : "Say something to start a live chat!"
+  },
   "About": {
     "hero": {
       "title": "Tentang Kami",
