@@ -10,8 +10,8 @@ export default function Product() {
     <main className="flex min-h-screen flex-col w-full bg-white gap-4">
       <HeroAboutUsIndex />
       <AboutUs />
-      <AboutUsMarquee />
       <AboutUsProduct />
+      <AboutUsMarquee />
     </main>
   )
 }
