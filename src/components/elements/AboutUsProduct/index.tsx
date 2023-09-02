@@ -11,7 +11,10 @@ export const AboutUsProduct: React.FC = () => {
   return (
     <>
       <section className="h-fit bg-[#294696] bg-cover relative p-12">
-        <div className="w-full flex flex-col md:flex-row justify-between " id="history">
+        <div
+          className="w-full flex flex-col md:flex-row justify-between "
+          id="history"
+        >
           <div className="w-full md:w-1/3">
             <Reveal>
               <p className=" text-[#D6E8F2] text-[48px] leading-[64.8px] font-bold mb-5">
@@ -71,12 +74,7 @@ export const AboutUsProduct: React.FC = () => {
             </Slider>
           </div>
           <div className="">
-            <Image
-              src={'/Vector.svg'}
-              fill
-              className="  "
-              alt="Assets"
-            />
+            <Image src={'/Vector.svg'} fill className="  " alt="Assets" />
           </div>
         </div>
       </section>

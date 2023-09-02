@@ -4,17 +4,16 @@ import Marquee from 'react-fast-marquee'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 export const AboutUsMarquee: React.FC = () => {
-
   const t = useTranslations('About.marquee')
   return (
     <>
       <section className="h-fit  bg-cover relative py-12 flex flex-col gap-8">
-        <div className=' pt-20 flex justify-center'>
-          <p className=' font-bold text-[#294696] text-6xl'>{t('title')}</p>
+        <div className=" pt-20 flex justify-center">
+          <p className=" font-bold text-[#294696] text-6xl">{t('title')}</p>
         </div>
         <div>
-          <Marquee className=''>
-            <div className='flex gap-8'>
+          <Marquee className="">
+            <div className="flex gap-8">
               <div className="bg-[#73A1C3] p-6 rounded-lg">
                 <Image
                   src={'/Marquee1.svg'}
@@ -53,7 +52,7 @@ export const AboutUsMarquee: React.FC = () => {
               </div>
             </div>
           </Marquee>
-          <div className=' bg-gray-500 h-[100px] relative -translate-y-10'></div>
+          <div className=" bg-gray-500 h-[100px] relative -translate-y-10"></div>
         </div>
       </section>
     </>
