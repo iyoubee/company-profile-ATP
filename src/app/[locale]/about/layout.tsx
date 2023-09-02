@@ -1,4 +1,4 @@
-import { Metadata } from "next"
+import { Metadata } from 'next'
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'id' }]
 }
@@ -16,7 +16,6 @@ export const generateMetadata = ({ params }: AboutUsProps): Metadata => {
     title: `${title} | ATP`,
   }
 }
-
 
 export default async function AboutUsLayout({ children }: AboutUsProps) {
   return <>{children}</>

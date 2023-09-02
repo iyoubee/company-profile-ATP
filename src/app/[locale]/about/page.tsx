@@ -12,6 +12,6 @@ export default function About() {
       <AboutUs />
       <AboutUsProduct />
       <AboutUsMarquee />
-      </main>
+    </main>
   )
 }
