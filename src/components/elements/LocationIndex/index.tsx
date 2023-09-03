@@ -27,8 +27,8 @@ export const LocationIndex: React.FC = () => {
             ></iframe>
           </div>
 
-          <div className="w-[500px] p-12 flex flex-col items-center justify-center">
-            <div className="flex flex-col gap-6">
+          <div className="w-[500px] p-12 flex flex-col gap-8 justify-center">
+            <div className="flex flex-col gap-6 justify-start">
               <p className="flex gap-4 items-center text-white">
                 <IconPhoneCall color="white" /> +62 812 9828 2870
               </p>
@@ -39,6 +39,19 @@ export const LocationIndex: React.FC = () => {
                 <IconLocation color="white" />{' '}
                 <div>
                   Jalan Cipinang Muara 2 No.3A,<p>Jakarta Timur</p>
+                </div>
+              </p>
+            </div>
+            <div className='w-full text-white'>
+              <p className='font-bold text-xl'>Our Email</p>
+              <p className=' border-b-2 p-4 items-center flex gap-4 w-full'>
+                yudiputrasabri789@gmail.com
+                <div className='w-full flex justify-end hover:cursor-pointer' onClick={() => {
+                  navigator.clipboard.writeText('yudiputrasabri789@gmail.com')
+                }}>
+                  <div className=' w-fit bg-[#63A3C7] p-2 rounded-lg'>
+                    <p>Copy Email</p>
+                  </div>
                 </div>
               </p>
             </div>
