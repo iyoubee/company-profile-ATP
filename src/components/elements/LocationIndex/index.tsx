@@ -42,14 +42,17 @@ export const LocationIndex: React.FC = () => {
                 </div>
               </p>
             </div>
-            <div className='w-full text-white'>
-              <p className='font-bold text-xl'>Our Email</p>
-              <p className=' border-b-2 p-4 items-center flex gap-4 w-full'>
+            <div className="w-full text-white">
+              <p className="font-bold text-xl">Our Email</p>
+              <p className=" border-b-2 p-4 items-center flex gap-4 w-full">
                 yudiputrasabri789@gmail.com
-                <div className='w-full flex justify-end hover:cursor-pointer' onClick={() => {
-                  navigator.clipboard.writeText('yudiputrasabri789@gmail.com')
-                }}>
-                  <div className=' w-fit bg-[#63A3C7] p-2 rounded-lg'>
+                <div
+                  className="w-full flex justify-end hover:cursor-pointer"
+                  onClick={() => {
+                    navigator.clipboard.writeText('yudiputrasabri789@gmail.com')
+                  }}
+                >
+                  <div className=" w-fit bg-[#63A3C7] p-2 rounded-lg">
                     <p>Copy Email</p>
                   </div>
                 </div>
