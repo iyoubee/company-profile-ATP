@@ -25,9 +25,9 @@ export const LocationIndex: React.FC = () => {
               style={{ border: 0 }}
               loading="lazy"
             ></iframe>
-            <div className='flex justify-between'>
-              <div className='h-40 w-40 -translate-x-20 opacity-40 rounded-full bg-white relative'></div>
-              <div className='h-40 w-40 translate-y-20 translate-x-20 z-1 opacity-40 rounded-full bg-white relative'></div>
+            <div className="flex justify-between">
+              <div className="h-40 w-40 -translate-x-20 opacity-40 rounded-full bg-white relative"></div>
+              <div className="h-40 w-40 translate-y-20 translate-x-20 z-1 opacity-40 rounded-full bg-white relative"></div>
             </div>
           </div>
 
@@ -39,16 +39,16 @@ export const LocationIndex: React.FC = () => {
               <p className="flex gap-4 items-center text-white">
                 <IconMail color="white" /> yudiputrasabri789@gmail.com
               </p>
-              <p className="flex gap-4 items-center text-white">
+              <div className="flex gap-4 items-center text-white">
                 <IconLocation color="white" />{' '}
                 <div>
                   Jalan Cipinang Muara 2 No.3A,<p>Jakarta Timur</p>
                 </div>
-              </p>
+              </div>
             </div>
             <div className="w-full text-white">
               <p className="font-bold text-xl">Our Email</p>
-              <p className=" border-b-2 p-4 items-center flex gap-4 w-full">
+              <div className=" border-b-2 p-4 items-center flex gap-4 w-full">
                 yudiputrasabri789@gmail.com
                 <div
                   className="w-full flex justify-end hover:cursor-pointer"
@@ -60,7 +60,7 @@ export const LocationIndex: React.FC = () => {
                     <p>Copy Email</p>
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>

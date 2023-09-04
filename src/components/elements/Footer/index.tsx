@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
                       alt="CompanyLogo"
                       width={50}
                       height={50}
-                      src={'CompanyLogo.svg'}
+                      src={'/FooterLogo.svg'}
                     />
                   </div>
                   PT. Aceng Tunggal Perkasa
