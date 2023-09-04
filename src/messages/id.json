@@ -59,9 +59,36 @@
       "asdasd": ""
     }
   },
+  "Contact": {
+    "title": "Our Contact?",
+    "desc": "Any question or remarks? Just write us a message!",
+    "locationTitle": "Contact Information",
+    "locationDesc": "Say something to start a live chat!"
+  },
   "About": {
     "hero": {
-      "title": "Tentang Kami"
+      "title": "Tentang Kami",
+      "moto": "Harmoni dari Kualitas dan Diversitas",
+      "story": "Perjalanan Kami",
+      "story-word": "Dimulai dari langkah kecil untuk mencipta dampak yang besar."
+    },
+    "deep": {
+      "comp": "Profil Kami",
+      "1": "Para komisaris PT ATP adalah pelaku usaha perkopian dari sejak tahun 2010, lalu menjadi pemrakarsa Brand Produk Kopi Aceng, sebagai produk kolaborasi petani kopi, BUMDES dan swasta.",
+      "2": "Mengorganize proses pengajuan Izin Perhutanan Sosial untuk LMDH Karamat Jaya, Desa Kramatwangi Kecamatan CisurupsanKabupaten Garut hingga keluar SK IPHPS dari kementerian LHK. Inisiator untuk kerjasama antar lembaga dalam pengelolaaan lahan Lancuran di PTPN 8 Afdedling Sedep bersama UNPAD.",
+      "3": "Mengorganize jaringan para penyuling Atsiri di Garut Selatan.",
+      "4": "Membantu pengembangan kelompok tani kopi di LMDH Karamatjaya dalam pembinaan bersama UNPAD.",
+      "5": "Pemrakarsa Site Agrowisata Tepas Papandayan yang dikelola BUMDES Kramatjaya."
+    },
+    "product": {
+      "desc": "PT. ATP adalah perusahaan yang bergerak di bidang perkebunan, peternakan, dan agrowisata. Perusahaan ini didirikan pada tahun 2000 oleh Aceng. PT. ATP memiliki berbagai macam usaha, seperti budidaya kopi arabika, budidaya hortikultura, peternakan lele, penyulingan minyak atsiri dari daun cengkeh, dan agrowisata. Produk-produk PT. ATP memiliki kualitas yang tinggi dan telah mendapatkan berbagai macam penghargaan.",
+      "title": "Bisnis Kami",
+      "1": "Make quick fixes based on the feedbacks you’ve recived. With a happy smile.",
+      "2": "Make quick fixes based on the feedbacks you’ve recived. With a happy smile.",
+      "3": "Make quick fixes based on the feedbacks you’ve recived. With a happy smile."
+    },
+    "marquee": {
+      "title": "Mitra Kami Terdahulu"
     }
   }
 }
