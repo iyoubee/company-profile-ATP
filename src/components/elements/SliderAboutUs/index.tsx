@@ -23,13 +23,15 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2009
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              Dirintis dari usaha perorangan di bidang tanaman kopi oleh beberapa orang yang sekarang menjabat sebagai komisaris dan pengurus dengan menggandeng beberapa mitra.
+                Dirintis dari usaha perorangan di bidang tanaman kopi oleh
+                beberapa orang yang sekarang menjabat sebagai komisaris dan
+                pengurus dengan menggandeng beberapa mitra.
               </span>
             </div>
           </div>
@@ -45,13 +47,15 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2010
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              Terciptanya Brand Produk Kopi Aceng, sebagai produk kolaborasi petani kopi, BUMDES dan swasta. </span>
+                Terciptanya Brand Produk Kopi Aceng, sebagai produk kolaborasi
+                petani kopi, BUMDES dan swasta.{' '}
+              </span>
             </div>
           </div>
           <div className="w-[300px] lg:w-[500px] min-h-[110px] lg:min-h-[200px] relative float-left">
@@ -66,13 +70,17 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2018
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              Menginisiasi kolaborasi dengan mitra petani kopi lainnya di desa Karamatwangi dengan brand kopi yang diberi nama “Kopi Aceng”, dilanjutkan dengan membangun kedai kopi sekaligus kantor di kaki Gunung Papandayan Kabupaten Garut.</span>
+                Menginisiasi kolaborasi dengan mitra petani kopi lainnya di desa
+                Karamatwangi dengan brand kopi yang diberi nama “Kopi Aceng”,
+                dilanjutkan dengan membangun kedai kopi sekaligus kantor di kaki
+                Gunung Papandayan Kabupaten Garut.
+              </span>
             </div>
           </div>
           <div className="w-[300px] lg:w-[500px] min-h-[110px] lg:min-h-[200px] relative float-left">
@@ -87,13 +95,18 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2020
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              Secara resmi mendirikan PT untuk menjadi payung hukum dalam operasi bisnis. Kemudian, memperluas area kerjasama budidaya kopi sampai wilayah Kincir-Sedep (Pangalengan), perbatasan antara kabupaten Garut dan Kabupaten Bandung. Selain itu, mulai mengelola dan mengembangkan Agrowisata Tepas Papandayan (ATP).</span>
+                Secara resmi mendirikan PT untuk menjadi payung hukum dalam
+                operasi bisnis. Kemudian, memperluas area kerjasama budidaya
+                kopi sampai wilayah Kincir-Sedep (Pangalengan), perbatasan
+                antara kabupaten Garut dan Kabupaten Bandung. Selain itu, mulai
+                mengelola dan mengembangkan Agrowisata Tepas Papandayan (ATP).
+              </span>
             </div>
           </div>
           <div className="w-[300px] lg:w-[500px] min-h-[110px] lg:min-h-[200px] relative float-left">
@@ -108,13 +121,15 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2022 - 1
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              ATP tersebut mulai dikenalkan sebagai wisata alam alternatif di kaki gunung Papandayan Kabupaten Garut, dan terus dikembangkan sampai saat ini.
+                ATP tersebut mulai dikenalkan sebagai wisata alam alternatif di
+                kaki gunung Papandayan Kabupaten Garut, dan terus dikembangkan
+                sampai saat ini.
               </span>
             </div>
           </div>
@@ -130,13 +145,16 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 2022 - 2
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              ATP aktif membangun jejaring bisnis dan kerjasama berbagai pihak dalam rangka mengupgrade kapasitas perusahaan, termasuk dengan institusi pendidikan, termasuk dalam hal ini dengan Program Studi Agribisnis Fakultas Pertanian UNPAD.
+                ATP aktif membangun jejaring bisnis dan kerjasama berbagai pihak
+                dalam rangka mengupgrade kapasitas perusahaan, termasuk dengan
+                institusi pendidikan, termasuk dalam hal ini dengan Program
+                Studi Agribisnis Fakultas Pertanian UNPAD.
               </span>
             </div>
           </div>
@@ -152,17 +170,19 @@ export const SliderAboutUs: React.FC = () => {
                     src={'/TimeLineLogo.svg'}
                     alt="TimeLineLogo"
                     fill
-                    className='relative'
+                    className="relative"
                   />
                 </div>
                 Saat ini
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              ATP sedang mengembangkan usahanya di bidang penyulingan minyak atsiri dari daun cengkeh (Clove leaf Oil ) di sentra tanaman cengkeh di Garut Selatan, Desa Linggamanik, kecamatan Cikelet Kabupaten Garut.</span>
+                ATP sedang mengembangkan usahanya di bidang penyulingan minyak
+                atsiri dari daun cengkeh (Clove leaf Oil ) di sentra tanaman
+                cengkeh di Garut Selatan, Desa Linggamanik, kecamatan Cikelet
+                Kabupaten Garut.
+              </span>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </>
