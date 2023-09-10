@@ -1,5 +1,6 @@
 import {
   AboutUsIndex,
+  ContactIndex,
   HeroIndex,
   PartnerIndex,
   ProductIndex,
@@ -14,6 +15,7 @@ export default function Home() {
       <ProductIndex />
       <ValueIndex />
       <PartnerIndex />
+      <ContactIndex />
     </main>
   )
 }

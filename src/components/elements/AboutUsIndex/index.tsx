@@ -34,8 +34,7 @@ export const AboutUsIndex: React.FC = () => {
               className="object-contain relative"
               alt="Assets"
             />
-
-            <div className="absolute bg-[#294696] text-[#E9E0D7] rounded-[16px] xl:flex left-2/3 divide-x-2 -bottom-10 hidden">
+            <div className="absolute bg-[#294696] text-[#E9E0D7] rounded-[16px] xl:flex left-2/3 divide-x-2 -bottom-32 2xl:-bottom-10 hidden">
               <Reveal>
                 <div className="w-[283px] px-[32px] py-[24px] flex items-center gap-2">
                   <p className="text-[36px] font-bold">1200+</p>

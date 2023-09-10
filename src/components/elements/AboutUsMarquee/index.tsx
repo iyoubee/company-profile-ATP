@@ -12,44 +12,42 @@ export const AboutUsMarquee: React.FC = () => {
           <p className=" font-bold text-[#294696] text-6xl">{t('title')}</p>
         </div>
         <div>
-          <Marquee className="">
-            <div className="flex gap-8">
-              <div className="bg-[#73A1C3] p-6 rounded-lg">
-                <Image
-                  src={'/Marquee1.svg'}
-                  width={200}
-                  height={200}
-                  alt="placeholder"
-                  className=""
-                />
-              </div>
-              <div className="bg-[#73A1C3] p-6 rounded-lg">
-                <Image
-                  src={'/Marquee2.svg'}
-                  width={200}
-                  height={200}
-                  alt="placeholder"
-                  className=""
-                />
-              </div>
-              <div className="bg-[#73A1C3] p-6 rounded-lg">
-                <Image
-                  src={'/Marquee3.svg'}
-                  width={200}
-                  height={200}
-                  alt="placeholder"
-                  className=""
-                />
-              </div>
-              <div className="bg-[#73A1C3] p-6 rounded-lg">
-                <Image
-                  src={'/Marquee4.svg'}
-                  width={200}
-                  height={200}
-                  alt="placeholder"
-                  className=""
-                />
-              </div>
+          <Marquee className="" autoFill>
+            <div className="bg-[#73A1C3] p-6 rounded-lg mx-2">
+              <Image
+                src={'/Marquee1.svg'}
+                width={200}
+                height={200}
+                alt="placeholder"
+                className=""
+              />
+            </div>
+            <div className="bg-[#73A1C3] p-6 rounded-lg mx-2">
+              <Image
+                src={'/Marquee2.svg'}
+                width={200}
+                height={200}
+                alt="placeholder"
+                className=""
+              />
+            </div>
+            <div className="bg-[#73A1C3] p-6 rounded-lg mx-2">
+              <Image
+                src={'/Marquee3.svg'}
+                width={200}
+                height={200}
+                alt="placeholder"
+                className=""
+              />
+            </div>
+            <div className="bg-[#73A1C3] p-6 rounded-lg mx-2">
+              <Image
+                src={'/Marquee4.svg'}
+                width={200}
+                height={200}
+                alt="placeholder"
+                className=""
+              />
             </div>
           </Marquee>
           <div className=" bg-gray-500 h-[100px] relative -translate-y-10"></div>

@@ -12,8 +12,12 @@ export const ContactIndex: React.FC = () => {
         <Reveal>
           <div className="flex justify-center text-center">
             <div className="">
-              <p className="font-bold text-6xl text-[#294696]">{t('title')}</p>
-              <p className="font-semo text-xl text-[#63A3C7]">{t('desc')}</p>
+              <p className="text-[#294696] text-[32px] md:text-[64px] leading-[43.2px] md:leading-[86px] font-bold text-center md:text-start">
+                {t('title')}
+              </p>
+              <p className="font-semo text-base md:text-xl text-[#63A3C7]">
+                {t('desc')}
+              </p>
             </div>
           </div>
         </Reveal>
