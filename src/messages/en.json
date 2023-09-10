@@ -24,7 +24,7 @@
     "product": {
       "title": "Our Product",
       "desc": "We are confidently crafting our products from our own farms and factories. Our goal is to deliver the finest quality products to you. Experience the richness in every drop and every seed.",
-      "button": "Explore our product"
+      "button": "Explore Products"
     },
     "value": {
       "title": "Our Values for Continuous Growth",
@@ -64,5 +64,15 @@
       "title": "About Us",
       "moto": "Harmoni dari Kualitas dan Diversitas"
     }
+  },
+  "Contact": {
+    "title": "Our Contact?",
+    "desc": "Any question or remarks? Just write us a message!",
+    "locationTitle": "Contact Information",
+    "locationDesc": "Say something to start a live chat!"
+  },
+  "Product": {
+    "title": "Produk Kami",
+    "desc": "PT ATP adalah perusahaan yang bergerak di bidang pertanian dan perkebunan. Kami memiliki berbagai produk unggulan, termasuk Kopi Aceng dan Minyak Atsiri dari Daun Cengkeh."
   }
 }

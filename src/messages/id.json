@@ -8,7 +8,7 @@
   "Index": {
     "hero": {
       "title": "Where Sustainability and Quality Meet.",
-      "desc": "Dengan rekam jejak yang terbukti di pasar kopi dan minyak esensial (Atsiri), kami bertekad untuk mengembangkan bisnis kami lebih jauh.",
+      "desc": "Dengan rekam jejak yang terbukti di pasar kopi dan minyak esensial (Atsiri), kami berkomitmen untuk mengembangkan bisnis kami lebih lanjut.",
       "button": "Lebih Lanjut"
     },
     "about": {
@@ -23,8 +23,8 @@
     },
     "product": {
       "title": "Produk Kami",
-      "desc": "Kami dengan bangga membuat produk kami dari kebun dan pabrik kami sendiri. Kami bertujuan untuk memberikan produk berkualitas terbaik ke rumah Anda. Rasakan kekayaan di setiap tetes, setiap biji.",
-      "button": "Explore our product"
+      "desc": "Kami dengan bangga membuat produk kami dari kebun dan pabrik kami sendiri. Kami bertujuan untuk memberikan produk berkualitas terbaik ke hadapan Anda. Rasakan kekayaan di setiap tetes dan setiap biji.",
+      "button": "Telusuri Produk"
     },
     "value": {
       "title": "Nilai Kami untuk Selalu Bertumbuh",
@@ -90,5 +90,9 @@
     "marquee": {
       "title": "Mitra Kami Terdahulu"
     }
+  },
+  "Product": {
+    "title": "Produk Kami",
+    "desc": "PT ATP adalah perusahaan yang bergerak di bidang pertanian dan perkebunan. Kami memiliki berbagai produk unggulan, termasuk Kopi Aceng dan Minyak Atsiri dari Daun Cengkeh."
   }
 }
