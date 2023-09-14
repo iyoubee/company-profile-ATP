@@ -11,7 +11,7 @@ export const ProductCardCoffee: React.FC = () => {
   return (
     <>
       <div className="w-full">
-        <div className="w-full h-[455px] rounded-3xl translate-y-8 bg-[url('/kopibg.jpg')] bg-cover bg-no-repeat"></div>
+        <div className="w-full h-[455px] rounded-3xl translate-y-8 bg-[url('/kopi-bg.jpg')] bg-cover bg-no-repeat"></div>
         <div className="w-full rounded-b-3xl bg-[#83764F] flex flex-col justify-between p-[36px] pt-[64px]">
           <p className="text-[#E9E0D7] font-medium text-[12.5px] md:text-[16px]">
             {t('kopi')}
