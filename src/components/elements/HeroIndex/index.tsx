@@ -23,7 +23,7 @@ export const HeroIndex: React.FC = () => {
             </Reveal>
             <div className="z-20">
               <Reveal>
-                <button className="rounded-full bg-[#294696] md:text-[20px] font-bold leading-[22px] text-[#D6E8F2] px-[36px] py-[15px] w-full md:w-fit flex-none z-20">
+                <button className="rounded-full bg-[#294696] hover:border-2 hover:border-[#294696] hover:bg-white hover:text-[#294696] md:text-[20px] font-bold leading-[22px] text-[#D6E8F2] px-[36px] py-[15px] w-full md:w-fit flex-none z-20">
                   {t('button')}
                 </button>
               </Reveal>

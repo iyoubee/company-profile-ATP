@@ -11,7 +11,7 @@ export const ProductCard: React.FC = () => {
             interdum velit. Sit tortor scelerisque in proin est turpis enim.{' '}
           </p>
           <div className="w-full flex justify-end">
-            <button className="font-bold md:text-[20px] text-xs text-[#E9E0D7] border-[#E9E0D7] border-4 px-10 py-2 rounded-full">
+            <button className="font-bold md:text-[20px] text-xs text-[#E9E0D7] hover:bg-[#E9E0D7] hover:text-[#294696] border-[#E9E0D7] border-4 px-10 py-2 rounded-full">
               Lihat detail
             </button>
           </div>

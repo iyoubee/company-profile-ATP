@@ -89,7 +89,7 @@ export const AboutUsIndex: React.FC = () => {
               </p>
             </Reveal>
             <Reveal>
-              <button className="text-[#294696] text-[20px] font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-full">
+              <button className="text-[#294696] text-[20px] hover:bg-[#294696] hover:text-white focus:bg-[#294696] focus:text-white font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-full">
                 {t('button')}
               </button>
             </Reveal>

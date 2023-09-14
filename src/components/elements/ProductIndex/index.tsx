@@ -55,7 +55,7 @@ export const ProductIndex: React.FC = () => {
           </Reveal>
           <div className="hidden lg:block">
             <Reveal>
-              <button className="font-bold text-[#F4FFEE] text-[20px] bg-[#294696] px-6 py-3 rounded-full">
+              <button className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:border-2 hover:border-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full">
                 {t('button')}
               </button>
             </Reveal>
