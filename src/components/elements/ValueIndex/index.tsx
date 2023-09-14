@@ -117,7 +117,7 @@ export const ValueIndex: React.FC = () => {
           </Reveal>
           <Reveal>
             <div className="flex gap-[60px]">
-              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[326.5px] h-[317px] rounded-[24px] p-[48px]">
+              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[326.5px] h-[349px] rounded-[24px] p-[48px]">
                 <Exploring />
                 <div className="mt-[10px]">
                   <p className="text-[#E9E0D7] font-semibold text-[32px] mb-[6px]">
