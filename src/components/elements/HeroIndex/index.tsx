@@ -8,7 +8,7 @@ export const HeroIndex: React.FC = () => {
   return (
     <>
       <section className=' h-fit bg-[url("/heroIndexAssets.svg")] bg-no-repeat bg-cover relative'>
-        <div className="md:p-20 p-5 pb-60 w-full">
+        <div className="md:p-20 2xl:px-60 p-5 pb-60 w-full">
           <div className="lg:w-2/3 w-full flex flex-col gap-[24px]">
             <Reveal>
               <p className="text-[#E9E0D7] md:text-[64px] text-[36px] font-bold leading-[48.6px] md:leading-[80px]">

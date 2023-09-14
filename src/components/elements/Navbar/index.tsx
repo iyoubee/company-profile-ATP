@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
         </Link>
         <div className="lg:flex gap-5 hidden">
           <Link
-            href={'/'}
+            href={'/' + language}
             className={`flex font-medium gap-2 border-b-2 hover:border-white border-transparent px-4 transition-all flex-none text-white p-1`}
           >
             {t('1')}

@@ -1,17 +1,19 @@
 'use client'
 import Image from 'next/image'
 import React, { useRef, useState } from 'react'
-import '../../../../node_modules/slick-carousel/slick/slick.css'
-import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
+import '../../../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { Arrow, ChevronWhiteBig, Plant } from '@/components/icons'
-import { Reveal } from '../Reveal'
 import { Accordion, Text } from '@mantine/core'
 import { IconPlus } from '@tabler/icons-react'
 import { useInView } from 'framer-motion'
-import { SidenavAnimate } from '../SidenavAnimate'
+import { Reveal, SidenavAnimate } from '@/components'
+import { useTranslations } from 'next-intl'
 
-export const ProductDetailSection: React.FC = () => {
+export default function AtsiriDetail() {
+  const t = useTranslations('Coffee')
+
   const refIntro = useRef(null)
   const isInViewIntro = useInView(refIntro)
 
@@ -54,9 +56,16 @@ export const ProductDetailSection: React.FC = () => {
     const offsetPosition = elementPosition + window.scrollY - navbarOffset
     window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
   }
-
   return (
-    <>
+    <main className="flex min-h-screen flex-col w-full bg-white">
+      <div className='md:aspect-[3/1] h-screen pl-10 md:h-auto w-full bg-[url("/kopiHeroBg.svg")] bg-cover bg-no-repeat bg-center md:px-20 p-5 flex flex-col justify-center'>
+        <p className="lg:text-[96px] text-[48px] lg:leading-[129.6px] leading-[64.8px] font-bold text-[#E9E0D7]">
+          {t('title')}
+        </p>
+        <div className="lg:text-[#294696] text-[#B54708] font-medium bg-[#E9E0D7] text-[12px] lg:text-[24px] p-[8px] lg:p-[16px] rounded-lg w-fit leading-[16px]">
+          Coffea canephora
+        </div>
+      </div>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
         {/* Nav */}
         <div className="lg:hidden w-full sticky top-[50px] flex overflow-x-auto z-20 bg-white py-3 gap-5 scrollbar-hidden">
@@ -165,7 +174,7 @@ export const ProductDetailSection: React.FC = () => {
               <Reveal>
                 <div className="w-full aspect-square relative">
                   <Image
-                    src={'/placeholder.jpeg'}
+                    src={'/introductioncoffee.jpg'}
                     alt="placeholder"
                     fill
                     className="object-cover relative"
@@ -173,22 +182,20 @@ export const ProductDetailSection: React.FC = () => {
                 </div>
               </Reveal>
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-full flex flex-col gap-5">
               <Reveal>
                 <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
-                  Lorem ipsum dolor sit amet consectetur. Sed pulvinar volutpat
-                  volutpat venenatis a. Suscipit ornare sed quisque enim purus
-                  adipiscing vitae fames. Lacus ac hac lectus eu. Id est
-                  senectus condimentum donec scelerisque eleifend dolor iaculis
-                  nulla. Ipsum ut feugiat tristique bibendum blandit a massa
-                  molestie augue. Et fringilla natoque phasellus mattis id erat
-                  lectus ipsum quam. Arcu nibh massa velit sit cursus nibh
-                  senectus in suscipit. Lobortis auctor risus quis in leo
-                  malesuada massa eu at. Aliquet eget id fusce mauris facilisis
-                  maecenas. Sit iaculis sem ipsum amet neque a euismod hendrerit
-                  quis. Mollis dui bibendum nec vitae scelerisque felis
-                  ultricies. A arcu pretium sagittis volutpat quis non maecenas
-                  elementum. Sit consectetur mattis et nunc tempor mi.
+                  {t('intro.1')}
+                </p>
+              </Reveal>
+              <Reveal>
+                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  {t('intro.2')}
+                </p>
+              </Reveal>
+              <Reveal>
+                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  {t('intro.3')}
                 </p>
               </Reveal>
             </div>
@@ -231,7 +238,7 @@ export const ProductDetailSection: React.FC = () => {
               >
                 <div className="w-full aspect-[2/1] relative">
                   <Image
-                    src={'/placeholder.jpeg'}
+                    src={'/history1.png'}
                     fill
                     alt="placeholder"
                     className="object-cover relative"
@@ -239,31 +246,7 @@ export const ProductDetailSection: React.FC = () => {
                 </div>
                 <div className="w-full aspect-[2/1] relative">
                   <Image
-                    src={'/placeholder.jpeg'}
-                    fill
-                    alt="placeholder"
-                    className="object-cover relative"
-                  />
-                </div>
-                <div className="w-full aspect-[2/1] relative">
-                  <Image
-                    src={'/placeholder.jpeg'}
-                    fill
-                    alt="placeholder"
-                    className="object-cover relative"
-                  />
-                </div>
-                <div className="w-full aspect-[2/1] relative">
-                  <Image
-                    src={'/placeholder.jpeg'}
-                    fill
-                    alt="placeholder"
-                    className="object-cover relative"
-                  />
-                </div>
-                <div className="w-full aspect-[2/1] relative">
-                  <Image
-                    src={'/placeholder.jpeg'}
+                    src={'/history2.jpg'}
                     fill
                     alt="placeholder"
                     className="object-cover relative"
@@ -271,13 +254,43 @@ export const ProductDetailSection: React.FC = () => {
                 </div>
               </Slider>
             </div>
-            <Reveal>
-              <p className="mt-10 text-center text-[#475467] text-[16px] leading-[21.6px]">
-                Lorem ipsum dolor sit amet consectetur. Sed pulvinar volutpat
-                volutpat venenatis a. Suscipit ornare sed quisque enim purus
-                adipiscing vitae fames. Lacus ac hac lectus eu.
-              </p>
-            </Reveal>
+            <ul className="list-disc flex flex-col mt-10">
+              <li>
+                <Reveal>
+                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                    {t('history.1')}
+                  </p>
+                </Reveal>
+              </li>
+              <li>
+                <Reveal>
+                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                    {t('history.2')}
+                  </p>
+                </Reveal>
+              </li>
+              <li>
+                <Reveal>
+                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                    {t('history.3')}
+                  </p>
+                </Reveal>
+              </li>
+              <li>
+                <Reveal>
+                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                    {t('history.4')}
+                  </p>
+                </Reveal>
+              </li>
+              <li>
+                <Reveal>
+                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                    {t('history.5')}
+                  </p>
+                </Reveal>
+              </li>
+            </ul>
           </div>
           {/* Production */}
           <div className="w-full" id="production" ref={refProduction}>
@@ -382,12 +395,10 @@ export const ProductDetailSection: React.FC = () => {
                         Step 1:
                       </p>
                       <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
-                        Plantation
+                        {t('step.1.title')}
                       </p>
                       <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
-                        Make quick fixes based on the feedbacks youve recived.
-                        With a happy smile. Make quick fixes based on the
-                        feedbacks youve recived. With a happy smile.
+                        {t('step.1.desc')}
                       </p>
                     </div>
                     <div>
@@ -395,12 +406,10 @@ export const ProductDetailSection: React.FC = () => {
                         Step 2:
                       </p>
                       <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
-                        Plantation
+                        {t('step.2.title')}
                       </p>
                       <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
-                        Make quick fixes based on the feedbacks youve recived.
-                        With a happy smile. Make quick fixes based on the
-                        feedbacks youve recived. With a happy smile.
+                        {t('step.2.desc')}
                       </p>
                     </div>
                     <div>
@@ -408,12 +417,10 @@ export const ProductDetailSection: React.FC = () => {
                         Step 3:
                       </p>
                       <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
-                        Plantation
+                        {t('step.3.title')}
                       </p>
                       <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
-                        Make quick fixes based on the feedbacks youve recived.
-                        With a happy smile. Make quick fixes based on the
-                        feedbacks youve recived. With a happy smile.
+                        {t('step.3.desc')}
                       </p>
                     </div>
                     <div>
@@ -421,12 +428,10 @@ export const ProductDetailSection: React.FC = () => {
                         Step 4:
                       </p>
                       <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
-                        Plantation
+                        {t('step.4.title')}
                       </p>
                       <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
-                        Make quick fixes based on the feedbacks youve recived.
-                        With a happy smile. Make quick fixes based on the
-                        feedbacks youve recived. With a happy smile.
+                        {t('step.4.desc')}
                       </p>
                     </div>
                     <div>
@@ -434,12 +439,21 @@ export const ProductDetailSection: React.FC = () => {
                         Step 5:
                       </p>
                       <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
-                        Plantation
+                        {t('step.5.title')}
                       </p>
                       <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
-                        Make quick fixes based on the feedbacks youve recived.
-                        With a happy smile. Make quick fixes based on the
-                        feedbacks youve recived. With a happy smile.
+                        {t('step.5.desc')}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                        Step 6:
+                      </p>
+                      <p className="text-[#E9E0D7] text-[24px] md:text-[36px] leading-[32.4px] md:leading-[54px] font-bold">
+                        {t('step.6.title')}
+                      </p>
+                      <p className="text-[#E9E0D7] text-[12px] md:text-[16px] leading-[16.2px] md:leading-[32px] font-medium">
+                        {t('step.6.desc')}
                       </p>
                     </div>
                   </Slider>
@@ -479,7 +493,7 @@ export const ProductDetailSection: React.FC = () => {
                     >
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/placeholder.jpeg'}
+                          src={'/introductioncoffee.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -487,7 +501,7 @@ export const ProductDetailSection: React.FC = () => {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/placeholder.jpeg'}
+                          src={'/step2.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -495,7 +509,7 @@ export const ProductDetailSection: React.FC = () => {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/placeholder.jpeg'}
+                          src={'/step3.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -503,7 +517,7 @@ export const ProductDetailSection: React.FC = () => {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/placeholder.jpeg'}
+                          src={'/step4.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -511,7 +525,15 @@ export const ProductDetailSection: React.FC = () => {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/placeholder.jpeg'}
+                          src={'/step5.jpg'}
+                          fill
+                          alt="placeholder"
+                          className="object-cover relative"
+                        />
+                      </div>
+                      <div className="w-full aspect-[8/5] relative">
+                        <Image
+                          src={'/step6.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -553,40 +575,41 @@ export const ProductDetailSection: React.FC = () => {
                   },
                 }}
               >
-                <Accordion.Item value="customization">
+                <Accordion.Item value="1">
                   <Accordion.Control>
-                    <Text fw={700}>Customization</Text>
+                    <Text fw={700}> {t('faq.1.q')}</Text>
                   </Accordion.Control>
-                  <Accordion.Panel>
-                    Colors, fonts, shadows and many other parts are customizable
-                    to fit your design needs
-                  </Accordion.Panel>
+                  <Accordion.Panel>{t('faq.1.a')}</Accordion.Panel>
                 </Accordion.Item>
-
-                <Accordion.Item value="flexibility">
+                <Accordion.Item value="2">
                   <Accordion.Control>
-                    <Text fw={700}>Flexibility</Text>
+                    <Text fw={700}> {t('faq.2.q')}</Text>
                   </Accordion.Control>
-                  <Accordion.Panel>
-                    Configure components appearance and behavior with vast
-                    amount of settings or overwrite any part of component styles
-                  </Accordion.Panel>
+                  <Accordion.Panel>{t('faq.2.a')}</Accordion.Panel>
                 </Accordion.Item>
-
-                <Accordion.Item value="focus-ring">
+                <Accordion.Item value="3">
                   <Accordion.Control>
-                    <Text fw={700}>No annoying focus ring</Text>
+                    <Text fw={700}> {t('faq.3.q')}</Text>
                   </Accordion.Control>
-                  <Accordion.Panel>
-                    With new :focus-visible pseudo-class focus ring appears only
-                    when user navigates with keyboard
-                  </Accordion.Panel>
+                  <Accordion.Panel>{t('faq.3.a')}</Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value="4">
+                  <Accordion.Control>
+                    <Text fw={700}> {t('faq.4.q')}</Text>
+                  </Accordion.Control>
+                  <Accordion.Panel>{t('faq.4.a')}</Accordion.Panel>
+                </Accordion.Item>
+                <Accordion.Item value="5">
+                  <Accordion.Control>
+                    <Text fw={700}> {t('faq.5.q')}</Text>
+                  </Accordion.Control>
+                  <Accordion.Panel>{t('faq.5.a')}</Accordion.Panel>
                 </Accordion.Item>
               </Accordion>
             </Reveal>
           </div>
         </div>
       </div>
-    </>
+    </main>
   )
 }

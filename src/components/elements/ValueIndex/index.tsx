@@ -37,7 +37,7 @@ export const ValueIndex: React.FC = () => {
 
   return (
     <>
-      <div className="w-full p-5 md:px-20 mt-[64px] md:mt-[128px] flex xl:flex-row flex-col-reverse gap-10 lg:gap-20">
+      <div className="w-full p-5 md:px-20 2xl:px-60 mt-[64px] md:mt-[128px] flex xl:flex-row flex-col-reverse gap-10 lg:gap-20">
         <Reveal>
           <div className="w-full flex justify-center lg:hidden">
             <Slider {...settings} ref={sliderRef} className="value w-[300px]">
@@ -91,7 +91,7 @@ export const ValueIndex: React.FC = () => {
         <div className="xl:w-7/12 w-full lg:flex flex-col gap-[60px] lg:items-center xl:items-start hidden">
           <Reveal>
             <div className="flex gap-[60px]">
-              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[309px] h-[349px] rounded-[24px] p-[48px] flex-initial">
+              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[326.5px] h-[349px] rounded-[24px] p-[48px]">
                 <Image src={'/pion.svg'} alt="pion" width={72} height={72} />
                 <div className="mt-[10px]">
                   <p className="text-[#E9E0D7] font-semibold text-[32px] mb-[6px]">
@@ -102,7 +102,7 @@ export const ValueIndex: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[344px] h-[349px] rounded-[24px] p-[48px]">
+              <div className="bg-[#294696] border-4 border-[#D6E8F24D] w-[326.5px] h-[349px] rounded-[24px] p-[48px]">
                 <Empowering />
                 <div className="mt-[10px]">
                   <p className="text-[#E9E0D7] font-semibold text-[32px] mb-[6px]">

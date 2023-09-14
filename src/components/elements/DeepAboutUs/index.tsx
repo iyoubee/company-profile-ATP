@@ -9,7 +9,7 @@ export const AboutUs: React.FC = () => {
   return (
     <>
       <section className=' h-fit bg-[url("/indonesia.svg")] bg-cover relative bg-no-repeat'>
-        <div className="w-full md:p-20 p-5 relative flex flex-col justify-center">
+        <div className="w-full md:px-20 md:pb-20 2xl:px-60 p-5 relative flex flex-col justify-center">
           <Reveal>
             <p className="text-[#294696] font-bold md:text-[64px] text-[32px]">
               {t('comp')}

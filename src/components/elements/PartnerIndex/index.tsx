@@ -87,7 +87,7 @@ export const PartnerIndex: React.FC = () => {
             </Slider>
           </Reveal>
         </div>
-        <div className="w-full px-5 md:px-20 py-[32px] bg-[#73A1C3] relative">
+        <div className="w-full px-5 md:px-20 2xl:px-60 py-[32px] bg-[#73A1C3] relative">
           <button
             className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20 text-white"
             onClick={prev}
