@@ -57,9 +57,7 @@ export const LocationIndex: React.FC = () => {
                   <div
                     className=" w-fit bg-[#63A3C7] md:p-2 p-1 rounded-lg flex items-center justify-center "
                     onClick={() => {
-                      navigator.clipboard.writeText(
-                        'ptaceng@gmail.com'
-                      )
+                      navigator.clipboard.writeText('ptaceng@gmail.com')
                     }}
                   >
                     <p className="text-xs md:text-sm lg:text-lg text-center">
