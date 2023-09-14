@@ -42,26 +42,32 @@ export const LocationIndex: React.FC = () => {
               <div className="flex gap-4 items-center text-white">
                 <IconLocation color="white" />{' '}
                 <div>
-                132 Dartmouth Street Boston,<p>Massachusetts 02156 United States</p>
+                  132 Dartmouth Street Boston,
+                  <p>Massachusetts 02156 United States</p>
                 </div>
               </div>
             </div>
             <div className="w-full text-white">
               <p className="font-bold text-xl">Our Email</p>
               <div className=" border-b-2 md:p-4 px-2 py-1 gap-4 w-full flex items-center">
-                <span className='text-xs md:text-sm lg:text-lg'>ptaceng@gmail.com</span>
+                <span className="text-xs md:text-sm lg:text-lg">
+                  ptaceng@gmail.com
+                </span>
                 <div className="w-full hover:cursor-pointer flex justify-end">
-                <div
-                  className=" w-fit bg-[#63A3C7] md:p-2 p-1 rounded-lg flex items-center justify-center "
-                  onClick={() => {
-                    navigator.clipboard.writeText('yudiputrasabri789@gmail.com')
-                  }}
-                >
-                  <p className='text-xs md:text-sm lg:text-lg text-center'>Copy</p>
+                  <div
+                    className=" w-fit bg-[#63A3C7] md:p-2 p-1 rounded-lg flex items-center justify-center "
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        'yudiputrasabri789@gmail.com'
+                      )
+                    }}
+                  >
+                    <p className="text-xs md:text-sm lg:text-lg text-center">
+                      Copy
+                    </p>
+                  </div>
                 </div>
               </div>
-              </div>
-              
             </div>
           </div>
         </div>

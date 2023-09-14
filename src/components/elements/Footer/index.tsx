@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export const Footer: React.FC = () => {
-
   const t = useTranslations('Footer')
   return (
     <>
@@ -45,7 +44,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col  w-full lg:w-1/3 lg:translate-x-8">
                 <span className="text-[#D6E8F2] font-bold text-2xl md:text-3xl mb-2">
-                {t('informasi.title')}
+                  {t('informasi.title')}
                 </span>
                 <span className=" font-medium">
                   <a
@@ -75,10 +74,12 @@ export const Footer: React.FC = () => {
               <div className="flex justify-normal w-full lg:w-3/5 ">
                 <div className="flex flex-col lg:translate-x-8">
                   <span className="text-[#D6E8F2] font-bold text-2xl md:text-3xl mb-2">
-                  {t('kontak')}
+                    {t('kontak')}
                   </span>
                   <span className=" font-medium">
-                    <p className="text-[#D6E8F2] text-md">pt.atpidn@gmail.com</p>
+                    <p className="text-[#D6E8F2] text-md">
+                      pt.atpidn@gmail.com
+                    </p>
                   </span>
                 </div>
               </div>

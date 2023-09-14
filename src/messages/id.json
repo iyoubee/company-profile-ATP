@@ -173,12 +173,12 @@
   },
   "Footer": {
     "temui": "Temui kami",
-    "informasi":{
-      "title" : "Informasi",
-      "tentang" : "Tentang Kami",
-      "produk" : "Produk",
+    "informasi": {
+      "title": "Informasi",
+      "tentang": "Tentang Kami",
+      "produk": "Produk",
       "kontak": "Kontak"
     },
-    "kontak" : "Kontak kami"
+    "kontak": "Kontak kami"
   }
 }
