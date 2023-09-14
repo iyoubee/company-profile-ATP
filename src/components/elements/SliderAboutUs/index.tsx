@@ -53,7 +53,7 @@ export const SliderAboutUs: React.FC = () => {
                 2010
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              {t('2')}
+                {t('2')}
               </span>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const SliderAboutUs: React.FC = () => {
                 2018
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              {t('3')}
+                {t('3')}
               </span>
             </div>
           </div>
@@ -97,7 +97,7 @@ export const SliderAboutUs: React.FC = () => {
                 2020
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              {t('4')}
+                {t('4')}
               </span>
             </div>
           </div>
@@ -119,7 +119,7 @@ export const SliderAboutUs: React.FC = () => {
                 2022
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              {t('5')}
+                {t('5')}
               </span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export const SliderAboutUs: React.FC = () => {
                 {t('now')}
               </span>
               <span className="font-semibold text-[8px] lg:text-[13px] text-[#004739]">
-              {t('6')}
+                {t('6')}
               </span>
             </div>
           </div>
