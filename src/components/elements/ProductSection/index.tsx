@@ -43,7 +43,7 @@ export const ProductSection: React.FC = () => {
         />
         <div className="lg:w-1/2 w-full z-10">
           <Reveal>
-            <p className="w-full text-justify text-[#3E6634] font-semibold lg:text-[24px] md:text-base leading-[24px] md:leading-[36px]">
+            <p className="w-full text-justify text-[#294696] font-semibold lg:text-[24px] md:text-base leading-[24px] md:leading-[36px]">
               {t('desc2')}
             </p>
           </Reveal>

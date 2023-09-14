@@ -14,9 +14,6 @@ export const LocationIndex: React.FC = () => {
               <p className="text-xl font-bold text-white">
                 {t('locationTitle')}
               </p>
-              <p className="text-lg font-thin text-white">
-                {t('locationDesc')}
-              </p>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22210.152602067505!2d106.90410602116935!3d-6.180441584026235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4df68eac583%3A0xa72cd766bccd0fa9!2sMaria%20Convention%20Hall!5e0!3m2!1sid!2sid!4v1693672135928!5m2!1sid!2sid"
