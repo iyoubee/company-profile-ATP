@@ -170,5 +170,15 @@
         "a": "We accept wholesale orders and have the potential for business partnerships. For more information about wholesale orders or business collaboration opportunities, please contact our team through the Contact Us page. We will be happy to answer your questions and discuss potential partnerships."
       }
     }
+  },
+  "Footer": {
+    "temui": "Find us",
+    "informasi":{
+      "title" : "Information",
+      "tentang" : "About us",
+      "produk" : "Product",
+      "kontak": "Contact"
+    },
+    "kontak" : "Our contact"
   }
 }

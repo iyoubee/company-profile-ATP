@@ -170,5 +170,15 @@
         "a": "Kami menerima pesanan grosir dan berpotensi untuk menjalin kerjasama bisnis. Untuk informasi lebih lanjut tentang pesanan grosir atau peluang kerjasama bisnis, silakan hubungi tim kami melalui laman Contact Us. Kami akan dengan senang hati menjawab pertanyaan Anda dan berdiskusi lebih lanjut mengenai kerjasama."
       }
     }
+  },
+  "Footer": {
+    "temui": "Temui kami",
+    "informasi":{
+      "title" : "Informasi",
+      "tentang" : "Tentang Kami",
+      "produk" : "Produk",
+      "kontak": "Kontak"
+    },
+    "kontak" : "Kontak kami"
   }
 }
