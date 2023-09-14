@@ -52,6 +52,13 @@ export const AboutUs: React.FC = () => {
                   </p>
                 </Reveal>
               </li>
+              <li>
+                <Reveal>
+                  <p className="text-black font-bold md:text-xl text-lg">
+                    {t('6')}
+                  </p>
+                </Reveal>
+              </li>
             </ul>
           </div>
         </div>

@@ -62,7 +62,34 @@
   "About": {
     "hero": {
       "title": "About Us",
-      "moto": "Harmoni dari Kualitas dan Diversitas"
+      "moto": "Harmony of Quality and Diversity",
+      "story": "Our Journey",
+      "story-word": "Starting from small steps to create a significant impact."
+    },
+    "timeline" : {
+      "now" : "Currently",
+      "1" : "Initiated as an individual effort in the field of coffee cultivation by several individuals who now serve as commissioners and executives, collaborating with several partners.",
+      "2" : "Creation of the Coffee Aceng Product Brand, as a collaborative product involving coffee farmers, Village-Owned Enterprises (BUMDES), and private entities.",
+      "3" : "Initiated collaboration with other coffee farmers in the Karamatwangi village with a coffee brand named “Kopi Aceng”, followed by the establishment of a coffee shop and office at the foothills of Mount Papandayan in Garut Regency.",
+      "4" : "Officially established a Limited Liability Company (PT) to provide a legal framework for business operations. Expanded the coffee cultivation partnership area to the Kincir-Sedep region (Pangalengan), on the border between Garut Regency and Bandung Regency.",
+      "5" : "ATP actively built a business network and collaborations with various parties to upgrade the company's capacity, including educational institutions, including in this case, the Agribusiness Program at the Faculty of Agriculture, UNPAD.",
+      "6" : "ATP is currently expanding its business into the distillation of clove leaf oil in the clove cultivation center in South Garut, Linggamanik Village, Cikelet District, Garut Regency."
+    },
+    "deep": {
+      "comp": "Our Profile",
+      "1": "The commissioners of PT ATP are coffee industry players since 2010, who later became the initiators of the Coffee Aceng Brand Product, a collaborative product involving coffee farmers, village-owned enterprises (BUMDES), and the private sector.",
+      "2": "They organized the process of applying for Social Forestry Permit for LMDH Kramat Jaya, Karamatwangi Village, Cisurupan Sub-District, Garut Regency, until obtaining the IPHPS Decree from the Ministry of Environment and Forestry.",
+      "3": "They initiated collaborations between institutions in the management of Lancuran land in PTPN 8 Sedep Division together with UNPAD.",
+      "4": "They organized a network of essential oil distillers in South Garut.",
+      "5": "They assisted in the development of coffee farmer groups in LMDH Karamatjaya through joint guidance with UNPAD.",
+      "6" : "They initiated the Tepas Papandayan Agrotourism Site managed by BUMDES Kramat Jaya."
+    },
+    "product": {
+      "desc": "PT ATP is a company engaged in the fields of agriculture, livestock, and agrotourism. We started our business as individuals in 2009. Currently, PT ATP is involved in various businesses, including the cultivation of arabica coffee, horticulture, and the distillation of essential oils from clove leaves. We are committed to consistently producing high-quality products.",
+      "title": "Our Business"
+    },
+    "marquee": {
+      "title": "Mitra Kami Terdahulu"
     }
   },
   "Contact": {

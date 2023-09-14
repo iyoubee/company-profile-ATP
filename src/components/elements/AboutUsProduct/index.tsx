@@ -47,7 +47,6 @@ export const AboutUsProduct: React.FC = () => {
                     className="object-cover relative"
                   />
                 </div>
-                <p className="text-[#294696]">{t('1')}</p>
               </div>
               <div className="w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl">
                 <div className="relative h-[400px] w-full">
@@ -58,7 +57,6 @@ export const AboutUsProduct: React.FC = () => {
                     className="object-cover relative"
                   />
                 </div>
-                <p className="text-[#294696]">{t('2')}</p>
               </div>
               <div className="w-fit aspect-[2/1] relative bg-[#D6E8F2] p-6 rounded-2xl">
                 <div className="relative h-[400px] w-full">
@@ -69,7 +67,6 @@ export const AboutUsProduct: React.FC = () => {
                     className="object-cover relative"
                   />
                 </div>
-                <p className="text-[#294696]">{t('3')}</p>
               </div>
             </Slider>
           </div>
