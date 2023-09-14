@@ -100,6 +100,75 @@
   },
   "Product": {
     "title": "Produk Kami",
-    "desc": "PT ATP adalah perusahaan yang bergerak di bidang pertanian dan perkebunan. Kami memiliki berbagai produk unggulan, termasuk Kopi Aceng dan Minyak Atsiri dari Daun Cengkeh."
+    "safaanjg": "Kopi",
+    "desc": "PT ATP adalah perusahaan yang bergerak di bidang pertanian dan perkebunan. Kami memiliki berbagai produk unggulan, termasuk Kopi Aceng dan Minyak Atsiri dari Daun Cengkeh.",
+    "desc2": "PT ATP memiliki produk berkualitas tinggi pada komoditas Kopi dan Atsiri yang diproduksi dengan metode organik dan ramah lingkungan. Melalui kurasi yang teliti dan profesional, kami yakin Anda dapat memilih produk bermutu yang terbaik untuk Anda. Anda dapat memilih produk yang paling cocok untuk kebutuhan dan gaya hidup Anda.",
+    "kopi": "Kopi Aceng adalah salah satu komoditas unggulan yang kami tawarkan di PT ATP. Kami menghasilkan kopi berkualitas tinggi, dengan biji kopi arabika yang tumbuh di tanah yang subur dan dipetik dengan tangan teliti. Proses pengolahan yang hati-hati dan pemanggangan biji kopi yang terkontrol memberikan cita rasa yang khas dan nikmat untuk para pecinta kopi.",
+    "atsiri": "Minyak atsiri dari daun cengkeh adalah salah satu produk unggulan kami di PT ATP. Kami menghasilkan minyak atsiri berkualitas tinggi dengan menggunakan daun cengkeh terbaik yang dipetik dengan teliti. Proses ekstraksi yang cermat menghasilkan minyak atsiri murni dengan aroma khas dan manfaat yang luar biasa.",
+    "button": "Telusuri produk kami",
+    "button2": "Lihat detail"
+  },
+  "Coffee": {
+    "title": "Kopi",
+    "intro": {
+      "1": "Kopi menjadi komoditas penting di Jawa Barat, termasuk Garut, sejak zaman kolonial Belanda. Daerah ini memiliki iklim yang cocok untuk pertumbuhan kopi arabika yang berkualitas tinggi. Banyak petani kopi di Garut yang telah mewarisi pengetahuan dan keterampilan dalam budidaya kopi selama berabad-abad.",
+      "2": "Selain sebagai komoditas ekspor, kopi juga menjadi minuman populer di Indonesia. Warung kopi tradisional dikenal sebagai bagian dari budaya Indonesia, di mana tempat orang berkumpul, berdiskusi, dan menikmati secangkir kopi yang lezat.",
+      "3": "Seiring berjalannya waktu, Indonesia telah menjadi salah satu produsen kopi terbesar di dunia, dengan berbagai varietas kopi, termasuk kopi Arabika dan Robusta, yang ditanam di berbagai wilayah. Kopi Indonesia dikenal karena rasa yang khas dan beragamnya, yang memenuhi selera pecinta kopi di seluruh dunia."
+    },
+    "history": {
+      "1": "Jawa Barat, termasuk Garut, adalah daerah yang ideal untuk pertumbuhan kopi Arabika. Iklim dan kondisi geografis yang ideal menciptakan lingkungan yang mendukung kualitas biji kopi yang tinggi.",
+      "2": "Kopi Garut, yang dikenal dengan rasa yang lembut dan aroma yang khas, merupakan salah satu varietas terkenal di Jawa Barat. Kopi ini sering diakui sebagai salah satu yang terbaik di wilayah tersebut.",
+      "3": "Budidaya kopi Arabika di Garut memiliki sejarah yang panjang dan kaya. Para petani di daerah ini sering mewarisi pengetahuan dan teknik pertanian dari generasi ke generasi, menjadikannya sebagai bagian penting dari warisan budaya.",
+      "4": "Petani kopi di Garut umumnya menerapkan proses pengolahan biji kopi yang teliti, termasuk pemilihan biji yang baik dan pengeringan yang cermat. Hal ini berkontribusi pada kualitas tinggi biji kopi Garut.",
+      "5": "Kopi Arabika juga memiliki peran penting dalam perekonomian dan kesejahteraan sosial di Garut. Budidaya kopi memberikan mata pencaharian kepada banyak masyarakat setempat, sehingga dapat mendukung keberlanjutan ekonomi masyarakat."
+    },
+    "step": {
+      "1": {
+        "title": "Penanaman dan Perawatan",
+        "desc": "Proses dimulai dengan penanaman bibit kopi Arabika di lahan yang telah dipersiapkan dengan baik. Pemilihan varietas kopi Arabika yang berkualitas tinggi dan kondisi tumbuh yang optimal merupakan langkah awal yang penting. Tanaman kopi diberi perawatan yang teliti, termasuk penyiraman, pemupukan, dan perlindungan dari hama dan penyakit."
+      },
+      "2": {
+        "title": "Pemetikan",
+        "desc": "Buah kopi yang sudah matang dipetik secara manual oleh petani. Hanya buah kopi yang matang yang dipetik untuk memastikan kualitas yang optimal."
+      },
+      "3": {
+        "title": "Pengolahan, Pembersihan, dan Pengeringan Biji",
+        "desc": "Setelah dipetik, biji kopi Arabika dipisahkan dari daging buahnya melalui proses pengolahan. Biji kopi yang sudah dipisahkan kemudian dibersihkan dan dikeringkan dengan hati-hati. Proses pengeringan ini bertujuan untuk mengurangi kadar air dalam biji kopi hingga mencapai tingkat kelembaban yang sesuai."
+      },
+      "4": {
+        "title": "Pemilihan dan Grading",
+        "desc": "Biji kopi yang sudah kering biasanya melalui tahap pemilihan dan grading, di mana biji-bijian yang memiliki karakteristik rasa yang serupa dikelompokkan bersama. Hal ini membantu memastikan kualitas yang konsisten"
+      },
+      "5": {
+        "title": "Panggangan",
+        "desc": "Biji kopi yang telah dipilih dan dikelompokkan kemudian dipanggang. Proses panggangan ini adalah kunci untuk mengembangkan cita rasa dan aroma yang khas dari kopi."
+      },
+      "6": {
+        "title": "Penggilingan dan Pengemasan",
+        "desc": "Setelah dipanggang, biji kopi dihancurkan menjadi bubuk kopi dan kemudian dikemas dalam kemasan yang aman untuk dapat mengantarkan produk terbaik kepada konsumen."
+      }
+    },
+    "faq": {
+      "1": {
+        "q": "Apa perbedaan antara kopi Arabika dan Robusta?",
+        "a": "Kopi Arabika (Arabica) dan Robusta (Coffea canephora) adalah dua jenis utama kopi yang paling sering ditanam di seluruh dunia. Kopi Arabika biasanya memiliki rasa yang lebih lembut, asam yang lebih tinggi, dan aroma yang lebih kompleks. Arabika sering dianggap sebagai kopi dengan kualitas lebih tinggi. Kopi Robusta memiliki rasa yang lebih kuat, lebih pahit, dan aroma yang kurang kompleks. Robusta memiliki kadar kafein yang lebih tinggi daripada Arabika."
+      },
+      "2": {
+        "q": "Apakah Kopi Aceng berupa biji kopi utuh atau sudah digiling?",
+        "a": "Ada 2 jenis kopi Arabika biji kuning yang bisa dipesan, yaitu gabah dan biji kopi yang tinggal digiling. Untuk selengkapnya, bisa cek di laman detail produk."
+      },
+      "3": {
+        "q": "Bagaimana saya harus menyajikan kopi Aceng dengan baik?",
+        "a": "Gunakan metode penyeduhan yang sesuai dengan preferensi Anda, seperti pour-over, French press, atau espresso. Pastikan air yang digunakan berkualitas baik dan suhunya tepat (sekitar 90-95 derajat Celsius). Selalu gunakan biji kopi yang segar, dan jangan lupa mencuci peralatan penyeduhan secara berkala. Nikmatilah kopi Aceng dengan penuh kesadaran untuk merasakan seluruh kompleksitas rasanya."
+      },
+      "4": {
+        "q": "Bagaimana cara menyimpan kopi dengan baik?",
+        "a": "Simpan biji kopi dalam wadah kedap udara, seperti kantong bersegel atau toples kedap udara. Jauhkan dari sinar matahari langsung dan panas yang berlebihan. Hindari menyimpan kopi di lemari es atau freezer karena perubahan suhu dapat menyebabkan kondensasi yang merusak kopi. Disarankan untuk menyimpan biji kopi dalam suhu ruangan yang konstan."
+      },
+      "5": {
+        "q": "Apakah Anda menerima pesanan grosir atau kerjasama bisnis?",
+        "a": "Kami menerima pesanan grosir dan berpotensi untuk menjalin kerjasama bisnis. Untuk informasi lebih lanjut tentang pesanan grosir atau peluang kerjasama bisnis, silakan hubungi tim kami melalui laman Contact Us. Kami akan dengan senang hati menjawab pertanyaan Anda dan berdiskusi lebih lanjut mengenai kerjasama."
+      }
+    }
   }
 }

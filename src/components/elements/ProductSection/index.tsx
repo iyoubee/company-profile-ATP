@@ -1,13 +1,17 @@
 'use client'
 import Image from 'next/image'
 import React, { useRef, useState } from 'react'
-import { ProductCard } from '../ProductCard'
+import { ProductCardCoffee } from '../ProductCardCoffee'
 import '../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { Reveal } from '../Reveal'
+import { useTranslations } from 'next-intl'
+import { ProductCardAtsiri } from '../ProductCardAtsiri'
 
 export const ProductSection: React.FC = () => {
+  const t = useTranslations('Product')
+
   const [id, setId] = useState(0)
 
   const sliderRef = useRef<Slider | null>(null)
@@ -25,6 +29,7 @@ export const ProductSection: React.FC = () => {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 6000,
   }
 
   return (
@@ -39,12 +44,7 @@ export const ProductSection: React.FC = () => {
         <div className="lg:w-1/2 w-full z-10">
           <Reveal>
             <p className="w-full text-justify text-[#3E6634] font-semibold lg:text-[24px] md:text-base leading-[24px] md:leading-[36px]">
-              Kami memiliki 30+ varian produk berkualitas tinggi pada komoditi
-              Kopi dan Atsiri yang diproduksi dengan metode organik dan ramah
-              lingkungan. Melalui kurasi yang teliti dan profesional, kami yakin
-              Anda dapat memilih produk bermutu yang terbaik untuk Anda. Anda
-              dapat memilih produk yang paling cocok untuk kebutuhan dan gaya
-              hidup Anda.
+              {t('desc2')}
             </p>
           </Reveal>
         </div>
@@ -58,7 +58,7 @@ export const ProductSection: React.FC = () => {
                   }`}
                   onClick={kopi}
                 >
-                  Kopi
+                  {t('safaanjg')}
                 </button>
                 <button
                   className={`text-[#475467] text-[25px] md:text-[32px] hover:font-bold border-[#83764F] transition-all z-10 ${
@@ -80,8 +80,8 @@ export const ProductSection: React.FC = () => {
                   }}
                   autoplay
                 >
-                  <ProductCard />
-                  <ProductCard />
+                  <ProductCardCoffee />
+                  <ProductCardAtsiri />
                 </Slider>
               </div>
             </Reveal>

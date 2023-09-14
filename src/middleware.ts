@@ -1,5 +1,5 @@
 import createIntlMiddleware from 'next-intl/middleware'
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   // Step 1: Use the incoming request
@@ -15,17 +15,6 @@ export function middleware(request: NextRequest) {
 
   // Step 3: Alter the response
   response.headers.set('x-default-locale', defaultLocale)
-
-  // enhanced middleware
-  const url = request.nextUrl.clone()
-  const pathname = url.pathname
-  if (pathname.includes('/product') && !pathname.endsWith('/product')) {
-    if (!pathname.endsWith('/coffee') && !pathname.endsWith('/atsiri')) {
-      console.log(pathname)
-      url.pathname = '/404'
-      return NextResponse.redirect(url)
-    }
-  }
 
   return response
 }

@@ -99,7 +99,76 @@
     "locationDesc": "Say something to start a live chat!"
   },
   "Product": {
-    "title": "Produk Kami",
-    "desc": "PT ATP adalah perusahaan yang bergerak di bidang pertanian dan perkebunan. Kami memiliki berbagai produk unggulan, termasuk Kopi Aceng dan Minyak Atsiri dari Daun Cengkeh."
+    "title": "Our Products",
+    "safaanjg": "Cofee",
+    "desc": "PT ATP is a company engaged in agriculture and farming. We have various flagship products, including Aceng Coffee and Essential Oil from Clove Leaves.",
+    "desc2": "PT ATP have high-quality products in the Coffee and Essential Oil commodities, produced using organic and environmentally-friendly methods. Through careful and professional curation, we are confident that you can select the best-quality products for your needs. You can choose the products that are most suitable for your needs and lifestyle.",
+    "kopi": "Coffee is one of the flagship commodities we offer at PT ATP. We produce high-quality coffee, with Arabica coffee beans grown in fertile soil and handpicked with precision. Our meticulous processing and controlled roasting processes result in a distinct and enjoyable coffee flavor for coffee enthusiasts.",
+    "atsiri": "Clove leaf essential oil is one of our flagship products at PT ATP. We produce high-quality essential oil using the finest clove leaves carefully harvested. Our meticulous extraction process results in pure essential oil with a distinct aroma and remarkable benefits.",
+    "button": "Explore our products",
+    "button2": "See detail"
+  },
+  "Coffee": {
+    "title": "Coffee",
+    "intro": {
+      "1": "Coffee became an essential commodity in West Java, including Garut, during the Dutch colonial era. This region boasts a suitable climate for growing high-quality Arabica coffee. Many coffee farmers in Garut have inherited knowledge and skills in coffee cultivation over centuries.",
+      "2": "Besides being an export commodity, coffee has also become a popular beverage in Indonesia. Traditional coffee shops, known as 'warung kopi', have become a part of Indonesian culture, where people gather, engage in discussions, and enjoy a cup of delicious coffee.",
+      "3": "Over time, Indonesia has become one of the world's largest coffee producers, with various coffee varieties, including Arabica and Robusta, grown in different regions. Indonesian coffee is known for its distinctive and diverse flavors, catering to the preferences of coffee lovers worldwide."
+    },
+    "history": {
+      "1": "West Java, including Garut, is an ideal region for the cultivation of Arabica coffee. The favorable climate and geographic conditions create an environment conducive to high-quality coffee beans.",
+      "2": "Garut coffee, known for its mild flavor and distinctive aroma, is one of the renowned varieties in West Java. This coffee is often recognized as among the best in the region.",
+      "3": "Arabica coffee cultivation in Garut has a long and rich history. Farmers in this region often inherit agricultural knowledge and techniques from generation to generation, making it an integral part of the cultural heritage.",
+      "4": "Coffee farmers in Garut typically employ meticulous bean processing methods, including careful bean selection and drying. This contributes to the high quality of Garut coffee beans.",
+      "5": "Arabica coffee also plays a significant role in the economy and social well-being of Garut. Coffee cultivation provides livelihoods for many local communities, supporting their economic sustainability."
+    },
+    "step": {
+      "1": {
+        "title": "Planting and Maintenance",
+        "desc": "The process begins with the planting of Arabica coffee seedlings in well-prepared land. The selection of high-quality Arabica coffee varieties and optimal growing conditions is an important initial step. The coffee plants receive meticulous care, including watering, fertilization, and protection from pests and diseases."
+      },
+      "2": {
+        "title": "Harvesting",
+        "desc": "Ripe coffee cherries are manually picked by farmers. Only ripe coffee cherries are harvested to ensure optimal quality."
+      },
+      "3": {
+        "title": "Processing, Cleaning, and Drying of Beans",
+        "desc": "After harvesting, Arabica coffee beans are separated from the fruit's flesh through processing. The separated coffee beans are then carefully cleaned and dried. The drying process aims to reduce the moisture content of the coffee beans to an appropriate level."
+      },
+      "4": {
+        "title": "Selection and Grading",
+        "desc": "Dried coffee beans typically go through a selection and grading stage, where beans with similar flavor characteristics are grouped together. This helps ensure consistent quality."
+      },
+      "5": {
+        "title": "Roasting",
+        "desc": "The selected and grouped coffee beans are then roasted. The roasting process is key to developing the distinctive flavor and aroma of the coffee."
+      },
+      "6": {
+        "title": "Grinding and Packaging",
+        "desc": "After roasting, the coffee beans are ground into coffee powder and then packaged in secure packaging to deliver the best products to consumers."
+      }
+    },
+    "faq": {
+      "1": {
+        "q": "What is the difference between Arabica and Robusta coffee?",
+        "a": "Arabica coffee (Coffea arabica) and Robusta coffee (Coffea canephora) are the two main types of coffee most commonly grown worldwide. Arabica coffee typically has a smoother taste, higher acidity, and more complex aroma. Arabica is often considered to be of higher quality. Robusta coffee has a stronger, more bitter taste and a less complex aroma. Robusta also has a higher caffeine content compared to Arabica."
+      },
+      "2": {
+        "q": "Is Kopi Aceng in the form of whole beans or already ground?",
+        "a": "There are two types of yellow Arabica coffee that can be ordered, which are parchment coffee and beans that have been ground. For more details, you can check on the product detail page."
+      },
+      "3": {
+        "q": "How should I serve Kopi Aceng properly?",
+        "a": "Use a brewing method that suits your preferences, such as pour-over, French press, or espresso. Ensure that the water you use is of good quality and at the right temperature (around 90-95 degrees Celsius). Always use fresh coffee beans, and don't forget to clean your brewing equipment regularly. Enjoy Kopi Aceng mindfully to savor its full flavor complexity."
+      },
+      "4": {
+        "q": "How should I store coffee properly?",
+        "a": "Store coffee beans in an airtight container, such as a sealed bag or an airtight jar. Keep them away from direct sunlight and excessive heat. Avoid storing coffee in the refrigerator or freezer as temperature fluctuations can cause condensation that can harm the coffee. It's recommended to store coffee beans at a consistent room temperature."
+      },
+      "5": {
+        "q": "Do you accept wholesale orders or business partnerships?",
+        "a": "We accept wholesale orders and have the potential for business partnerships. For more information about wholesale orders or business collaboration opportunities, please contact our team through the Contact Us page. We will be happy to answer your questions and discuss potential partnerships."
+      }
+    }
   }
 }

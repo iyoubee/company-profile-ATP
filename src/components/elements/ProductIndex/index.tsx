@@ -41,7 +41,7 @@ export const ProductIndex: React.FC = () => {
 
   return (
     <>
-      <div className="w-full md:px-20 p-5 lg:mt-[128px] mt-[64px] flex flex-col lg:flex-row">
+      <div className="w-full md:px-20 2xl:px-60 p-5 lg:mt-[128px] mt-[64px] flex flex-col lg:flex-row">
         <div className="lg:w-1/2 w-full">
           <Reveal>
             <p className="text-[#294696] font-bold text-[32px] md:text-[64px] mb-[16px]">
@@ -53,13 +53,13 @@ export const ProductIndex: React.FC = () => {
               {t('desc')}
             </p>
           </Reveal>
-          <div className="hidden lg:block">
-            <Reveal>
-              <button className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:border-2 hover:border-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full">
+          <Reveal>
+            <div className="hidden lg:block w-fit h-fit">
+              <button className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:ring-2 hover:ring-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full my-1 mx-1">
                 {t('button')}
               </button>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
         <div className="lg:w-1/2 w-full px-10 relative">
           <button
@@ -84,7 +84,7 @@ export const ProductIndex: React.FC = () => {
                 <Slider {...settings} ref={sliderRef} className="product">
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product1.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -92,7 +92,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product2.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -100,7 +100,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product3.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -108,7 +108,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product4.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -120,7 +120,7 @@ export const ProductIndex: React.FC = () => {
                 <Slider {...settings2} ref={sliderRef} className="product">
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product1.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -128,7 +128,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product2.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -136,7 +136,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product3.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
@@ -144,7 +144,7 @@ export const ProductIndex: React.FC = () => {
                   </div>
                   <div className="w-[260px] h-[160px] relative">
                     <Image
-                      src={'/placeholder.jpeg'}
+                      src={'/product4.jpg'}
                       alt="placeholder"
                       fill
                       className="object-fill relative"
