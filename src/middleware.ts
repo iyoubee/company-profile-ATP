@@ -1,12 +1,7 @@
 import createIntlMiddleware from 'next-intl/middleware'
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  return NextResponse.redirect(
-    new URL(
-      'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUcbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXAgbGl2ZQ%3D%3D'
-    )
-  )
   // Step 1: Use the incoming request
   const defaultLocale = request.headers.get('x-default-locale') || 'id'
 
