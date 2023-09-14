@@ -17,13 +17,13 @@ export const ProductCardAtsiri: React.FC = () => {
             {t('atsiri')}
           </p>
           <div className="w-full flex justify-end mt-2">
-          <div className="w-full flex justify-end mt-2">
-            <Link href={'/' + language + '/product/atsiri'}>
-              <button className="font-bold md:text-[20px] text-xs text-[#E9E0D7] hover:bg-[#E9E0D7] hover:text-[#294696] border-[#E9E0D7] border-4 px-10 py-2 rounded-full">
-                {t('button2')}
-              </button>
-            </Link>
-          </div>
+            <div className="w-full flex justify-end mt-2">
+              <Link href={'/' + language + '/product/atsiri'}>
+                <button className="font-bold md:text-[20px] text-xs text-[#E9E0D7] hover:bg-[#E9E0D7] hover:text-[#294696] border-[#E9E0D7] border-4 px-10 py-2 rounded-full">
+                  {t('button2')}
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
