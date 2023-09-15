@@ -1,10 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useTranslations, } from 'next-intl'
 import React from 'react'
+import { useLanguageContext } from '@/components/contexts'
 
 export const Footer: React.FC = () => {
   const t = useTranslations('Footer')
+  const { language } = useLanguageContext()
   return (
     <>
       <footer className="footer bg-[#294696] relative border-b-2 border-blue-700 lg:items-center flex flex-col">
@@ -48,7 +50,7 @@ export const Footer: React.FC = () => {
                 </span>
                 <span className=" font-medium">
                   <a
-                    href="#"
+                    href={'/' + language + '/about'}
                     className="text-[#D6E8F2]  text-md hover:text-blue-500"
                   >
                     {t('informasi.tentang')}
@@ -56,7 +58,7 @@ export const Footer: React.FC = () => {
                 </span>
                 <span className=" font-medium">
                   <a
-                    href="#"
+                    href={'/' + language + '/product'}
                     className="text-[#D6E8F2]  text-md hover:text-blue-500"
                   >
                     {t('informasi.produk')}
@@ -64,7 +66,7 @@ export const Footer: React.FC = () => {
                 </span>
                 <span className=" font-medium">
                   <a
-                    href="#"
+                    href={'/' + language + '/contact'}
                     className="text-[#D6E8F2]  text-md hover:text-blue-500"
                   >
                     {t('informasi.kontak')}

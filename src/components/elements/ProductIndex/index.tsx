@@ -7,9 +7,11 @@ import Slider from 'react-slick'
 import Image from 'next/image'
 import { ChevronWhite } from '@/components/icons'
 import { Reveal } from '../Reveal'
+import { useRouter } from 'next/navigation'
 
 export const ProductIndex: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null)
+  const router = useRouter()
 
   const next = () => {
     sliderRef.current?.slickNext()
@@ -55,7 +57,7 @@ export const ProductIndex: React.FC = () => {
           </Reveal>
           <Reveal>
             <div className="hidden lg:block w-fit h-fit">
-              <button className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:ring-2 hover:ring-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full my-1 mx-1">
+              <button onClick={() => router.push('/product')} className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:ring-2 hover:ring-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full my-1 mx-1">
                 {t('button')}
               </button>
             </div>

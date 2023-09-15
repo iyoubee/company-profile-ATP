@@ -2,12 +2,14 @@
 import React from 'react'
 import { IconPhoneCall, IconMail, IconLocation } from '@tabler/icons-react'
 import { useTranslations } from 'next-intl'
+import { Toaster, toast } from 'react-hot-toast'
 export const LocationIndex: React.FC = () => {
   const t = useTranslations('Contact')
 
   return (
     <>
       <section className="flex justify-center">
+      <Toaster/>
         <div className="flex bg-[#294696] rounded-2xl flex-col-reverse lg:flex-row pt-4 lg:pt-0">
           <div className="md:w-[500px] w-[300px] bg-[#63A3C7] rounded-2xl md:p-12 p-3 flex flex-col gap-4">
             <div className="flex flex-col gap-1">
@@ -54,6 +56,7 @@ export const LocationIndex: React.FC = () => {
                   <div
                     className=" w-fit bg-[#63A3C7] md:p-2 p-1 rounded-lg flex items-center justify-center "
                     onClick={() => {
+                      toast.success('Email copied!')
                       navigator.clipboard.writeText('ptaceng@gmail.com')
                     }}
                   >

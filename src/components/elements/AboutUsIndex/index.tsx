@@ -3,9 +3,11 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 import { Reveal } from '../Reveal'
+import { useRouter } from 'next/navigation'
 
 export const AboutUsIndex: React.FC = () => {
   const t = useTranslations('Index.about')
+  const router = useRouter()
 
   return (
     <>
@@ -51,7 +53,7 @@ export const AboutUsIndex: React.FC = () => {
             </div>
             <Reveal>
               <div className="w-full justify-end flex">
-                <button className="text-[#294696] text-[20px] hover:bg-[#294696] hover:text-white focus:bg-[#294696] focus:text-white font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-fit">
+                <button onClick={()=>router.push('/about')} className="text-[#294696] text-[20px] hover:bg-[#294696] hover:text-white focus:bg-[#294696] focus:text-white font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-fit">
                   {t('button')}
                 </button>
               </div>
