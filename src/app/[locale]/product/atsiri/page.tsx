@@ -160,12 +160,12 @@ export default function CoffeeDetail() {
               </div>
               <div className="lg:w-1/2 w-full flex flex-col gap-5">
                 <Reveal>
-                  <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  <p className="font-medium md:text-[18px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                     {t('intro.1')}
                   </p>
                 </Reveal>
                 <Reveal>
-                  <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  <p className="font-medium md:text-[18px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                     {t('intro.2')}
                   </p>
                 </Reveal>
@@ -230,21 +230,21 @@ export default function CoffeeDetail() {
             <ul className="list-disc flex flex-col mt-10">
               <li>
                 <Reveal>
-                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                  <p className="text-justify text-[#475467] font-medium md:text-[18px] text-[12px] leading-[21.6px]">
                     {t('history.1')}
                   </p>
                 </Reveal>
               </li>
               <li>
                 <Reveal>
-                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                  <p className="text-justify text-[#475467] font-medium md:text-[18px] text-[12px] leading-[21.6px]">
                     {t('history.2')}
                   </p>
                 </Reveal>
               </li>
               <li>
                 <Reveal>
-                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
+                  <p className="text-justify text-[#475467] font-medium md:text-[18px] text-[12px] leading-[21.6px]">
                     {t('history.3')}
                   </p>
                 </Reveal>
