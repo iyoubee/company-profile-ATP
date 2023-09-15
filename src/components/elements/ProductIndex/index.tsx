@@ -57,7 +57,10 @@ export const ProductIndex: React.FC = () => {
           </Reveal>
           <Reveal>
             <div className="hidden lg:block w-fit h-fit">
-              <button onClick={() => router.push('/product')} className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:ring-2 hover:ring-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full my-1 mx-1">
+              <button
+                onClick={() => router.push('/product')}
+                className="font-bold text-[#F4FFEE] hover:bg-white hover:text-[#294696] hover:ring-2 hover:ring-[#294696] text-[20px] bg-[#294696] px-6 py-3 rounded-full my-1 mx-1"
+              >
                 {t('button')}
               </button>
             </div>

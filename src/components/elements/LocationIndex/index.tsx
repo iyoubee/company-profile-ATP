@@ -9,7 +9,7 @@ export const LocationIndex: React.FC = () => {
   return (
     <>
       <section className="flex justify-center">
-      <Toaster/>
+        <Toaster />
         <div className="flex bg-[#294696] rounded-2xl flex-col-reverse lg:flex-row pt-4 lg:pt-0">
           <div className="md:w-[500px] w-[300px] bg-[#63A3C7] rounded-2xl md:p-12 p-3 flex flex-col gap-4">
             <div className="flex flex-col gap-1">
