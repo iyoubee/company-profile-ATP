@@ -52,7 +52,7 @@ export const AboutUsIndex: React.FC = () => {
               </Reveal>
             </div>
             <Reveal>
-              <div className="w-full justify-end flex pt-4">
+              <div className="w-full justify-end flex pt-6">
                 <button
                   onClick={() => router.push('/about')}
                   className="text-[#294696] text-[20px] hover:bg-[#294696] hover:text-white focus:bg-[#294696] focus:text-white font-extrabold leading-[22px] border-4 border-[#294696] px-6 py-4 rounded-full w-fit"
