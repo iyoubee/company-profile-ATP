@@ -160,44 +160,42 @@ export default function CoffeeDetail() {
         </div>
         <div className="lg:w-3/4 w-full flex flex-col gap-10 mg:gap-20">
           {/* Intro */}
-          <div
-            className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify"
-            id="intro"
-            ref={refIntro}
-          >
-            <div className="lg:w-1/2 w-full flex flex-col gap-[10px]">
-              <Reveal>
-                <p className="text-[#294696] font-bold text-[32px] md:text-[48px]">
-                  Introduction
-                </p>
-              </Reveal>
-              <Reveal>
-                <div className="w-full aspect-square relative">
-                  <Image
-                    src={'/introductioncoffee.jpg'}
-                    alt="placeholder"
-                    fill
-                    className="object-cover relative"
-                  />
-                </div>
-              </Reveal>
-            </div>
-            <div className="lg:w-1/2 w-full flex flex-col gap-5">
-              <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
-                  {t('intro.1')}
-                </p>
-              </Reveal>
-              <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
-                  {t('intro.2')}
-                </p>
-              </Reveal>
-              <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
-                  {t('intro.3')}
-                </p>
-              </Reveal>
+          <div className="w-full flex flex-col gap-5" id="intro" ref={refIntro}>
+            <Reveal>
+              <p className="text-[#294696] font-bold text-[32px] md:text-[48px]">
+                Introduction
+              </p>
+            </Reveal>
+            <div className="w-full flex lg:flex-row flex-col gap-5 lg:gap-[48px] text-justify">
+              <div className="lg:w-1/2 w-full flex flex-col gap-[10px]">
+                <Reveal>
+                  <div className="w-full aspect-square relative">
+                    <Image
+                      src={'/introductioncoffee.jpg'}
+                      alt="placeholder"
+                      fill
+                      className="object-cover relative"
+                    />
+                  </div>
+                </Reveal>
+              </div>
+              <div className="lg:w-1/2 w-full flex flex-col gap-5">
+                <Reveal>
+                  <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                    {t('intro.1')}
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                    {t('intro.2')}
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                    {t('intro.3')}
+                  </p>
+                </Reveal>
+              </div>
             </div>
           </div>
           {/* History */}
