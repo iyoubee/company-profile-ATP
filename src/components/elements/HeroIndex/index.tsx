@@ -2,9 +2,11 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import { Reveal } from '../Reveal'
+import { useRouter } from 'next/navigation'
 
 export const HeroIndex: React.FC = () => {
   const t = useTranslations('Index.hero')
+  const router = useRouter()
   return (
     <>
       <section className=' h-fit bg-[url("/heroIndexAssets.svg")] bg-no-repeat bg-cover relative'>
@@ -23,7 +25,7 @@ export const HeroIndex: React.FC = () => {
             </Reveal>
             <div className="z-20">
               <Reveal>
-                <button className="rounded-full bg-[#294696] hover:border-2 hover:border-[#294696] hover:bg-white hover:text-[#294696] md:text-[20px] font-bold leading-[22px] text-[#D6E8F2] px-[36px] py-[15px] w-full md:w-fit flex-none z-20">
+                <button onClick={()=>router.push('/product')} className="rounded-full bg-[#294696] hover:border-2 hover:border-[#294696] hover:bg-white hover:text-[#294696] md:text-[20px] font-bold leading-[22px] text-[#D6E8F2] px-[36px] py-[15px] w-full md:w-fit flex-none z-20">
                   {t('button')}
                 </button>
               </Reveal>

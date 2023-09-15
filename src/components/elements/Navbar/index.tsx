@@ -153,7 +153,7 @@ export const Navbar: React.FC = () => {
               </Menu.Item>
               <Menu.Item>
                 <Link
-                  href={'/'}
+                  href={'/' + language + '/about'}
                   className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
                 >
                   {t('2')}
@@ -169,7 +169,7 @@ export const Navbar: React.FC = () => {
               </Menu.Item>
               <Menu.Item>
                 <Link
-                  href={'/'}
+                  href={'/' + language + '/contact'}
                   className={`flex font-medium gap-2 border-b-2 border-transparent px-4 transition-all flex-none text-black p-1`}
                 >
                   {t('4')}
