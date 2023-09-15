@@ -20,11 +20,6 @@ export const HeroProduct: React.FC = () => {
               {t('desc')}
             </p>
           </Reveal>
-          <Reveal>
-            <button className="w-fit md:px-[36px] md:py-[15px] px-4 py-2 rounded-full font-bold text-sm md:text-[20px] leading-[22px] text-[#D6E8F2] bg-[#294696] hover:bg-white hover:text-[#294696] hover:border-1 hover:border-[#294696]">
-              {t('button')}
-            </button>
-          </Reveal>
         </div>
       </div>
     </>

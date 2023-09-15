@@ -9,13 +9,16 @@ import { Reveal } from '../Reveal'
 
 export const PartnerIndex: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null)
+  const sliderRef2 = useRef<Slider | null>(null)
 
   const next = () => {
     sliderRef.current?.slickNext()
+    sliderRef2.current?.slickNext()
   }
 
   const prev = () => {
     sliderRef.current?.slickPrev()
+    sliderRef2.current?.slickPrev()
   }
 
   const settings = {
@@ -65,7 +68,7 @@ export const PartnerIndex: React.FC = () => {
         </div>
         <div className="lg:hidden">
           <Reveal>
-            <Slider {...settings2} ref={sliderRef}>
+            <Slider {...settings2} ref={sliderRef2}>
               <div className="w-[480px]  lg:h-[500px] xl:h-[360px]">
                 <PartnerCard />
               </div>
@@ -89,7 +92,7 @@ export const PartnerIndex: React.FC = () => {
         </div>
         <div className="w-full px-5 md:px-20 2xl:px-60 py-[32px] bg-[#73A1C3] relative">
           <button
-            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20 text-white"
+            className="bg-[#294696] p-[6px] rounded-full absolute -top-5 left-20 text-white z-10"
             onClick={prev}
           >
             <Reveal>

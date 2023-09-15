@@ -169,6 +169,67 @@
         "q": "Apakah Anda menerima pesanan grosir atau kerjasama bisnis?",
         "a": "Kami menerima pesanan grosir dan berpotensi untuk menjalin kerjasama bisnis. Untuk informasi lebih lanjut tentang pesanan grosir atau peluang kerjasama bisnis, silakan hubungi tim kami melalui laman Contact Us. Kami akan dengan senang hati menjawab pertanyaan Anda dan berdiskusi lebih lanjut mengenai kerjasama."
       }
+    },
+    "origin": {
+      "1": "Kopi Arabika pertama kali ditemukan di wilayah Ethiopia, tetapi sekarang Indonesia juga dikenal sebagai produsen utama kopi Arabika. Kopi Arabika tumbuh dengan baik di daerah-daerah tertentu di Indonesia, seperti Aceh, Sumatera Utara, dan Jawa Barat.",
+      "2": "Kopi Arabika Indonesia dikenal dengan rasa yang lembut, asam yang seimbang, dan aroma yang khas. Varietas ini sering dianggap memiliki kualitas lebih tinggi daripada kopi Robusta, yang juga banyak tumbuh di Indonesia.",
+      "3": "Beberapa kopi Arabika Indonesia telah diakui sebagai beberapa yang terbaik di dunia. Sebagai contoh, Kopi Gayo dari Aceh dan Kopi Toraja dari Sulawesi telah mendapatkan reputasi internasional karena kualitasnya. Indonesia memiliki beragam varietas kopi Arabika, yang masing-masing memiliki karakteristik rasa yang berbeda. Hal ini membuat Indonesia menjadi tempat yang menarik untuk mencoba berbagai jenis kopi Arabika."
+    }
+  },
+  "Atsiri": {
+    "title": "Atsiri",
+    "intro": {
+      "1": "Minyak atsiri yang terbuat dari cengkeh adalah minyak esensial yang diekstrak dari bunga cengkeh (Syzygium aromaticum). Proses ekstraksi minyak atsiri dari cengkeh biasanya melibatkan destilasi uap, di mana uap air menghilangkan minyak esensial dari bunga cengkeh.",
+      "2": "Minyak atsiri cengkeh memiliki aroma yang kuat, tajam, dan pedas. Ini sering digunakan dalam industri parfum dan aromaterapi untuk meningkatkan aroma campuran minyak esensial. Selain itu, minyak atsiri cengkeh memiliki sifat antiseptik dan analgesik alami sehingga sering digunakan dalam pengobatan tradisional untuk meredakan sakit gigi atau sakit kepala. Minyak atsiri cengkeh juga dapat digunakan dalam produk-produk perawatan kulit dan rambut karena sifat-sifatnya yang bermanfaat. Beberapa orang juga menggunakannya untuk membantu meredakan gangguan pencernaan atau sebagai stimulan yang memberikan rasa segera."
+    },
+    "history": {
+      "1": "Minyak atsiri dari cengkeh berasal dari bunga cengkeh, yang tumbuh di berbagai negara tropis, termasuk Indonesia, Madagaskar, Sri Lanka, dan India.",
+      "2": "Minyak atsiri cengkeh memiliki sifat antiseptik alami yang dapat membantu melawan mikroorganisme patogen, sehingga sering digunakan untuk meredakan infeksi.",
+      "3": "Minyak atsiri cengkeh telah lama digunakan dalam pengobatan tradisional untuk meredakan nyeri gigi dan sakit kepala. Ini juga digunakan dalam pengobatan herbal untuk masalah pencernaan."
+    },
+    "step": {
+      "1": {
+        "title": "Pemetikan",
+        "desc": "Proses dimulai dengan pemetikan bunga cengkeh yang telah matang. Petani secara hati-hati memilih bunga yang siap dipetik untuk memastikan kualitas yang optimal."
+      },
+      "2": {
+        "title": "Penyulingan Uap",
+        "desc": "Bunga cengkeh yang telah dipetik kemudian masuk ke dalam proses penyulingan uap. Uap air digunakan untuk mengeluarkan minyak atsiri dari bunga cengkeh."
+      },
+      "3": {
+        "title": "Pemisahan Minyak Atsiri",
+        "desc": "Setelah proses penyulingan, minyak atsiri dipisahkan dari uap air. Minyak atsiri yang terkondensasi dipisahkan dan dikumpulkan."
+      },
+      "4": {
+        "title": "Pembersihan dan Pemurnian",
+        "desc": "Minyak atsiri kemudian menjalani proses pembersihan dan pemurnian untuk menghilangkan kotoran dan komponen yang tidak diinginkan, sehingga memastikan kualitas minyak yang lebih murni."
+      },
+      "5": {
+        "title": "Pengujian Kualitas",
+        "desc": "Sebelum dikemas, minyak atsiri cengkeh diuji secara ketat untuk memverifikasi kualitasnya. Ini melibatkan pengujian aroma, keasaman, dan parameter kualitas lainnya."
+      },
+      "6": {
+        "title": "Pengemasan dan Distribusi",
+        "desc": "Minyak atsiri cengkeh yang telah lulus pengujian kualitas dikemas dengan hati-hati dalam kemasan yang aman dan siap untuk didistribusikan kepada pelanggan."
+      }
+    },
+    "faq": {
+      "1": {
+        "q": "Bagaimana Cara Menggunakan Minyak Atsiri Cengkeh?",
+        "a": "Minyak atsiri cengkeh dapat digunakan dalam beberapa cara yang berbeda, salah satunya adalah dengan mengencerkan beberapa tetes minyak, lalu mengoleskannya ke area yang memerlukan perawatan, seperti kulit yang terkena nyeri otot atau sendi. Minyak atsiri cengkeh juga dapat digunakan dalam diffuser untuk mengisi ruangan dengan aroma yang menyegarkan. Pastikan untuk selalu mengikuti petunjuk penggunaan yang tepat yang ada pada produk kami."
+      },
+      "2": {
+        "q": "Apakah Ada Efek Samping dari Penggunaan Minyak Atsiri Cengkeh?",
+        "a": "Penggunaan minyak atsiri cengkeh yang berlebihan atau tidak diencerkan dapat menyebabkan iritasi kulit. Jika Anda memiliki masalah kesehatan tertentu atau sedang mengonsumsi obat-obatan, konsultasikan dengan profesional kesehatan sebelum menggunakan minyak atsiri cengkeh."
+      },
+      "3": {
+        "q": "Bagaimana Cara Menyimpan Minyak Atsiri Cengkeh dengan Baik?",
+        "a": "Produk kami sebaiknya ditutup dengan rapat dan terhindar dari cahaya langsung serta perubahan suhu yang ekstrem. Tempatkan kemasan di tempat yang sejuk dan kering, idealnya dalam lemari atau laci yang dapat terlindungi dari paparan sinar matahari. Pastikan tutup botol tertutup rapat untuk mencegah penguapan dan menjaga kualitas minyak."
+      },
+      "4": {
+        "q": "Apakah Anda menerima pesanan grosir atau kerjasama bisnis?",
+        "a": "Kami menerima pesanan grosir dan berpotensi untuk menjalin kerjasama bisnis. Untuk informasi lebih lanjut tentang pesanan grosir atau peluang kerjasama bisnis, silakan hubungi tim kami melalui laman Contact Us. Kami akan dengan senang hati menjawab pertanyaan Anda dan berdiskusi lebih lanjut mengenai kerjasama."
+      }
     }
   },
   "Footer": {

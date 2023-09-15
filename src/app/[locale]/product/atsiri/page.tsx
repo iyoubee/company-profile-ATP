@@ -4,24 +4,21 @@ import React, { useRef, useState } from 'react'
 import '../../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../../node_modules/slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
-import { Arrow, ChevronWhiteBig, Plant } from '@/components/icons'
+import { Arrow, ChevronWhiteBig } from '@/components/icons'
 import { Accordion, Text } from '@mantine/core'
 import { IconPlus } from '@tabler/icons-react'
 import { useInView } from 'framer-motion'
 import { Reveal, SidenavAnimate } from '@/components'
 import { useTranslations } from 'next-intl'
 
-export default function AtsiriDetail() {
-  const t = useTranslations('Coffee')
+export default function CoffeeDetail() {
+  const t = useTranslations('Atsiri')
 
   const refIntro = useRef(null)
   const isInViewIntro = useInView(refIntro)
 
   const refHistory = useRef(null)
   const isInViewHistory = useInView(refHistory)
-
-  const refProduction = useRef(null)
-  const isInViewProduction = useInView(refProduction)
 
   const refHowTo = useRef(null)
   const isInViewHowTo = useInView(refHowTo)
@@ -58,13 +55,10 @@ export default function AtsiriDetail() {
   }
   return (
     <main className="flex min-h-screen flex-col w-full bg-white">
-      <div className='md:aspect-[3/1] h-screen pl-10 md:h-auto w-full bg-[url("/kopiHeroBg.svg")] bg-cover bg-no-repeat bg-center md:px-20 p-5 flex flex-col justify-center'>
+      <div className='md:aspect-[3/1] h-screen pl-10 md:h-auto w-full bg-[url("/atsiriHeroBg.png")] bg-cover bg-no-repeat bg-center md:px-20 p-5 flex flex-col justify-center'>
         <p className="lg:text-[96px] text-[48px] lg:leading-[129.6px] leading-[64.8px] font-bold text-[#E9E0D7]">
           {t('title')}
         </p>
-        <div className="lg:text-[#294696] text-[#B54708] font-medium bg-[#E9E0D7] text-[12px] lg:text-[24px] p-[8px] lg:p-[16px] rounded-lg w-fit leading-[16px]">
-          Coffea canephora
-        </div>
       </div>
       <div className="w-full md:px-20 px-5 lg:flex py-10">
         {/* Nav */}
@@ -84,14 +78,6 @@ export default function AtsiriDetail() {
             onClick={() => scrollTo('history')}
           >
             History
-          </p>
-          <p
-            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
-              isInViewProduction && 'border-b-2 border-[#73A1C3]'
-            }`}
-            onClick={() => scrollTo('production')}
-          >
-            Production
           </p>
           <p
             className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
@@ -128,14 +114,7 @@ export default function AtsiriDetail() {
             >
               History
             </SidenavAnimate>
-            <SidenavAnimate
-              isInView={isInViewProduction}
-              scrollTo={() => {
-                scrollTo('production')
-              }}
-            >
-              Production
-            </SidenavAnimate>
+
             <SidenavAnimate
               isInView={isInViewHowTo}
               scrollTo={() => {
@@ -174,7 +153,7 @@ export default function AtsiriDetail() {
               <Reveal>
                 <div className="w-full aspect-square relative">
                   <Image
-                    src={'/introductioncoffee.jpg'}
+                    src={'/introductionatsiri.jpg'}
                     alt="placeholder"
                     fill
                     className="object-cover relative"
@@ -191,11 +170,6 @@ export default function AtsiriDetail() {
               <Reveal>
                 <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                   {t('intro.2')}
-                </p>
-              </Reveal>
-              <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
-                  {t('intro.3')}
                 </p>
               </Reveal>
             </div>
@@ -238,7 +212,7 @@ export default function AtsiriDetail() {
               >
                 <div className="w-full aspect-[2/1] relative">
                   <Image
-                    src={'/history1.png'}
+                    src={'/history3.jpg'}
                     fill
                     alt="placeholder"
                     className="object-cover relative"
@@ -246,7 +220,7 @@ export default function AtsiriDetail() {
                 </div>
                 <div className="w-full aspect-[2/1] relative">
                   <Image
-                    src={'/history2.jpg'}
+                    src={'/history4.jpg'}
                     fill
                     alt="placeholder"
                     className="object-cover relative"
@@ -276,97 +250,9 @@ export default function AtsiriDetail() {
                   </p>
                 </Reveal>
               </li>
-              <li>
-                <Reveal>
-                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
-                    {t('history.4')}
-                  </p>
-                </Reveal>
-              </li>
-              <li>
-                <Reveal>
-                  <p className="text-justify text-[#475467] text-[16px] leading-[21.6px]">
-                    {t('history.5')}
-                  </p>
-                </Reveal>
-              </li>
             </ul>
           </div>
-          {/* Production */}
-          <div className="w-full" id="production" ref={refProduction}>
-            <Reveal>
-              <p className="text-center text-[#294696] text-[48px] leading-[64.8px] font-bold mb-5">
-                Production
-              </p>
-            </Reveal>
-            <Reveal>
-              <div className="w-full flex flex-col md:flex-row gap-[16px] h-[418.53px] md:h-[270px]">
-                <div className="md:w-1/4 w-full h-1/4 md:h-full relative rounded-lg">
-                  <Image
-                    src={'/placeholder.jpeg'}
-                    alt="placeholder"
-                    fill
-                    className="object-cover rounded-lg relative"
-                  />
-                </div>
-                <div className="md:w-1/2 w-full h-1/2 md:h-full flex gap-[16px]">
-                  <div className="w-1/2 h-full flex flex-col gap-[16px]">
-                    <div className="w-full h-3/5 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
-                      <div className="absolute left-0 bottom-0 z-0">
-                        <Plant />
-                      </div>
-                      <p className="text-[#E9E0D7] text-[47.49px] lg:text-[64px] font-bold leading-[64.12px] md:leading-[86.4px] z-10">
-                        88%
-                      </p>
-                      <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
-                        Sulawesi
-                      </p>
-                    </div>
-                    <div className="w-full h-2/5 relative rounded-lg">
-                      <Image
-                        src={'/placeholder.jpeg'}
-                        alt="placeholder"
-                        fill
-                        className="object-cover rounded-lg relative"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-1/2 h-full flex flex-col gap-[16px]">
-                    <div className="w-full h-1/2 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
-                      <div className="absolute left-0 bottom-0 z-0">
-                        <Plant />
-                      </div>
-                      <p className="text-[#E9E0D7] text-[35.62px] lg:text-[48px] font-bold leading-[48.09px] md:leading-[64.8px] z-10">
-                        10%
-                      </p>
-                      <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
-                        Sumatra
-                      </p>
-                    </div>
-                    <div className="w-full h-1/2 bg-[#294696] rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
-                      <div className="absolute left-0 bottom-0 z-0">
-                        <Plant />
-                      </div>
-                      <p className="text-[#E9E0D7] text-[35.62px] lg:text-[48px] font-bold leading-[48.09px] md:leading-[64.8px] z-10">
-                        2%
-                      </p>
-                      <p className="text-[#E9E0D7] text-[17.81px] lg:text-[24px] font-medium  md:leading-[32.4px] z-10">
-                        Java
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="md:w-1/4 w-full md:h-full h-1/4 relative rounded-lg">
-                  <Image
-                    src={'/placeholder.jpeg'}
-                    alt="placeholder"
-                    fill
-                    className="object-cover relative rounded-lg"
-                  />
-                </div>
-              </div>
-            </Reveal>
-          </div>
+
           {/* How To */}
           <div className="w-full" id="howTo" ref={refHowTo}>
             <Reveal>
@@ -493,7 +379,7 @@ export default function AtsiriDetail() {
                     >
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/introductioncoffee.jpg'}
+                          src={'/atsiristep1.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -501,7 +387,7 @@ export default function AtsiriDetail() {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/step2.jpg'}
+                          src={'/atsiristep2.png'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -509,7 +395,7 @@ export default function AtsiriDetail() {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/step3.jpg'}
+                          src={'/atsiristep3.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -517,7 +403,7 @@ export default function AtsiriDetail() {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/step4.jpg'}
+                          src={'/atsiristep4.png'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -525,7 +411,7 @@ export default function AtsiriDetail() {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/step5.jpg'}
+                          src={'/atsiristep5.jpg'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -533,7 +419,7 @@ export default function AtsiriDetail() {
                       </div>
                       <div className="w-full aspect-[8/5] relative">
                         <Image
-                          src={'/step6.jpg'}
+                          src={'/atsiristep6.png'}
                           fill
                           alt="placeholder"
                           className="object-cover relative"
@@ -598,12 +484,6 @@ export default function AtsiriDetail() {
                     <Text fw={700}> {t('faq.4.q')}</Text>
                   </Accordion.Control>
                   <Accordion.Panel>{t('faq.4.a')}</Accordion.Panel>
-                </Accordion.Item>
-                <Accordion.Item value="5">
-                  <Accordion.Control>
-                    <Text fw={700}> {t('faq.5.q')}</Text>
-                  </Accordion.Control>
-                  <Accordion.Panel>{t('faq.5.a')}</Accordion.Panel>
                 </Accordion.Item>
               </Accordion>
             </Reveal>

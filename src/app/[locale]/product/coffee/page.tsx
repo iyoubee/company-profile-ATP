@@ -303,7 +303,7 @@ export default function CoffeeDetail() {
               <div className="w-full flex flex-col md:flex-row gap-[16px] h-[418.53px] md:h-[270px]">
                 <div className="md:w-1/4 w-full h-1/4 md:h-full relative rounded-lg">
                   <Image
-                    src={'/placeholder.jpeg'}
+                    src={'/introductioncoffee.jpg'}
                     alt="placeholder"
                     fill
                     className="object-cover rounded-lg relative"
@@ -324,7 +324,7 @@ export default function CoffeeDetail() {
                     </div>
                     <div className="w-full h-2/5 relative rounded-lg">
                       <Image
-                        src={'/placeholder.jpeg'}
+                        src={'/introductioncoffee.jpg'}
                         alt="placeholder"
                         fill
                         className="object-cover rounded-lg relative"
@@ -358,7 +358,7 @@ export default function CoffeeDetail() {
                 </div>
                 <div className="md:w-1/4 w-full md:h-full h-1/4 relative rounded-lg">
                   <Image
-                    src={'/placeholder.jpeg'}
+                    src={'/introductioncoffee.jpg'}
                     alt="placeholder"
                     fill
                     className="object-cover relative rounded-lg"
@@ -366,6 +366,43 @@ export default function CoffeeDetail() {
                 </div>
               </div>
             </Reveal>
+          </div>
+          {/* Origin */}
+          <div className="w-full flex gap-10" id="origin">
+            <div className="w-1/2 flex flex-col gap-3 text-justify">
+              <Reveal>
+                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  {t('origin.1')}
+                </p>
+              </Reveal>
+              <Reveal>
+                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  {t('origin.2')}
+                </p>
+              </Reveal>
+              <Reveal>
+                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                  {t('origin.3')}
+                </p>
+              </Reveal>
+            </div>
+            <div className="w-1/2 flex flex-col gap-5">
+              <Reveal>
+                <p className="text-[#294696] font-bold text-[32px] md:text-[48px]">
+                  The Origin of Arabica
+                </p>
+              </Reveal>
+              <Reveal>
+                <div className="w-full aspect-[3/2] relative">
+                  <Image
+                    src={'/introductioncoffee.jpg'}
+                    alt="placeholder"
+                    fill
+                    className="object-cover relative"
+                  />
+                </div>
+              </Reveal>
+            </div>
           </div>
           {/* How To */}
           <div className="w-full" id="howTo" ref={refHowTo}>

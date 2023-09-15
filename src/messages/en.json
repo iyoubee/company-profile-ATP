@@ -169,6 +169,67 @@
         "q": "Do you accept wholesale orders or business partnerships?",
         "a": "We accept wholesale orders and have the potential for business partnerships. For more information about wholesale orders or business collaboration opportunities, please contact our team through the Contact Us page. We will be happy to answer your questions and discuss potential partnerships."
       }
+    },
+    "origin": {
+      "1": "Arabica coffee was first discovered in the Ethiopian region, but Indonesia is now also recognized as a major producer of Arabica coffee. Arabica coffee thrives in specific regions in Indonesia, such as Aceh, North Sumatra, and West Java.",
+      "2": "Indonesian Arabica coffee is known for its mild flavor, balanced acidity, and distinctive aroma. This variety is often considered to have higher quality compared to Robusta coffee, which is also widely grown in Indonesia.",
+      "3": "Some Indonesian Arabica coffees have been recognized as one of the best coffees in the world. For instance, Gayo coffee from Aceh and Toraja coffee from Sulawesi have gained international reputation for their quality. Indonesia has a wide range of Arabica coffee varieties, each with its own distinct flavor characteristics. This makes Indonesia an interesting place to explore various types of Arabica coffee."
+    }
+  },
+  "Atsiri": {
+    "title": "Atsiri",
+    "intro": {
+      "1": "Clove essential oil is an essential oil extracted from the clove flower (Syzygium aromaticum). The process of extracting essential oil from cloves typically involves steam distillation, where steam removes the essential oil from the clove flowers.",
+      "2": "Clove essential oil has a strong, sharp, and spicy aroma. It is often used in the perfume industry and aromatherapy to enhance the scent of essential oil blends. Additionally, clove essential oil has natural antiseptic and analgesic properties, making it commonly used in traditional medicine to alleviate toothaches or headaches. Clove essential oil can also be used in skincare and haircare products due to its beneficial properties. Some people also use it to help alleviate digestive disorders or as a stimulant providing an immediate sensation."
+    },
+    "history": {
+      "1": "Clove essential oil is derived from clove flowers, which grow in various tropical countries, including Indonesia, Madagascar, Sri Lanka, and India.",
+      "2": "Clove essential oil possesses natural antiseptic properties that can help combat pathogenic microorganisms, making it useful in relieving infections.",
+      "3": "Clove essential oil has been traditionally used in natural remedies to alleviate toothaches and headaches. It is also used in herbal medicine for digestive issues."
+    },
+    "step": {
+      "1": {
+        "title": "Harvesting",
+        "desc": "The process begins with the harvesting of mature cloves. Farmers carefully select the cloves ready for harvesting to ensure optimal quality."
+      },
+      "2": {
+        "title": "Steam Distillation",
+        "desc": "The harvested cloves are then subjected to steam distillation. Steam is used to extract the essential oil from the cloves."
+      },
+      "3": {
+        "title": "Separation of Essential Oil",
+        "desc": "After the distillation process, the essential oil is separated from the steam. The condensed essential oil is separated and collected."
+      },
+      "4": {
+        "title": "Cleaning and Purification",
+        "desc": "The essential oil then undergoes a cleaning and purification process to remove impurities and unwanted components, ensuring a purer oil."
+      },
+      "5": {
+        "title": "Quality Testing",
+        "desc": "Before packaging, clove essential oil undergoes rigorous quality testing to verify its quality. This includes testing for aroma, acidity, and other quality parameters."
+      },
+      "6": {
+        "title": "Packaging and Distribution",
+        "desc": "Clove essential oil that has passed quality testing is carefully packaged in secure packaging and ready for distribution to customers."
+      }
+    },
+    "faq": {
+      "1": {
+        "q": "How to Use Clove Essential Oil?",
+        "a": "Clove essential oil can be used in several different ways, one of which is by diluting a few drops of oil and then applying it to areas that require treatment, such as skin affected by muscle or joint pain. Clove essential oil can also be used in a diffuser to fill the room with a refreshing aroma. Be sure to always follow the specific usage instructions provided with our product."
+      },
+      "2": {
+        "q": "Are There Any Side Effects of Using Clove Essential Oil?",
+        "a": "Excessive or undiluted use of clove essential oil can cause skin irritation. If you have specific health concerns or are taking medications, consult with a healthcare professional before using clove essential oil."
+      },
+      "3": {
+        "q": "How to Store Clove Essential Oil Properly?",
+        "a": "Our product should be tightly sealed and protected from direct light and extreme temperature changes. Place the packaging in a cool and dry place, ideally in a cupboard or drawer shielded from sunlight. Ensure the bottle cap is tightly closed to prevent evaporation and preserve the quality of the oil."
+      },
+      "4": {
+        "q": "Do You Accept Wholesale Orders or Business Partnerships?",
+        "a": "We accept wholesale orders and have the potential for business partnerships. For more information about wholesale orders or business collaboration opportunities, please contact our team through the Contact Us page. We will be happy to answer your questions and discuss potential partnerships."
+      }
     }
   },
   "Footer": {
