@@ -369,17 +369,17 @@ export default function CoffeeDetail() {
           <div className="w-full flex gap-10" id="origin">
             <div className="w-1/2 flex flex-col gap-3 text-justify">
               <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                <p className="font-medium md:text-[18px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                   {t('origin.1')}
                 </p>
               </Reveal>
               <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                <p className="font-medium md:text-[18px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                   {t('origin.2')}
                 </p>
               </Reveal>
               <Reveal>
-                <p className="md:text-[16px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
+                <p className="font-medium md:text-[18px] text-[12px] leading-[16.2px] md:leading-[21.6px] text-[#475467]">
                   {t('origin.3')}
                 </p>
               </Reveal>
