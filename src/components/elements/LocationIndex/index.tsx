@@ -41,8 +41,10 @@ export const LocationIndex: React.FC = () => {
               <div className="flex gap-4 items-center text-white">
                 <IconLocation color="white" />{' '}
                 <div>
-                Kedai Kopi Aceng, Jalan Agrowisata Tepas 
-                <p>Papandayan, Desa Kramatwangi, Kecamatan Cisurupan, Garut</p>
+                  Kedai Kopi Aceng, Jalan Agrowisata Tepas
+                  <p>
+                    Papandayan, Desa Kramatwangi, Kecamatan Cisurupan, Garut
+                  </p>
                 </div>
               </div>
             </div>
