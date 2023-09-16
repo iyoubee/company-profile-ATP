@@ -11,7 +11,7 @@ interface ContactProps {
 }
 
 export const generateMetadata = ({ params }: ContactProps): Metadata => {
-  const title = params.locale == 'en' ? 'Contact' : 'Kontang'
+  const title = params.locale == 'en' ? 'Contact' : 'Kontak'
   return {
     title: `${title} | ATP`,
   }
