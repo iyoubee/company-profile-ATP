@@ -27,10 +27,12 @@ export const ProductListCard: React.FC<ProductListCardProps> = ({
             className="object-cover object-center relative rounded-[16px]"
           />
         </div>
-        <div className="flex flex-col gap-2 text-justify">
+        <div className="flex flex-col gap-2">
           <p className="text-[#73A1C3] font-medium text-[24px]">{title}</p>
           <p className="text-[#D6E8F2] font-medium text-xs">{subtitle}</p>
-          <p className="text-[#D6E8F2] font-medium text-xs">{desc}</p>
+          <p className="text-[#D6E8F2] font-medium text-xs text-justify">
+            {desc}
+          </p>
         </div>
       </div>
     </>
