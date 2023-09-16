@@ -174,6 +174,79 @@
       "1": "Kopi Arabika pertama kali ditemukan di wilayah Ethiopia, tetapi sekarang Indonesia juga dikenal sebagai produsen utama kopi Arabika. Kopi Arabika tumbuh dengan baik di daerah-daerah tertentu di Indonesia, seperti Aceh, Sumatera Utara, dan Jawa Barat.",
       "2": "Kopi Arabika Indonesia dikenal dengan rasa yang lembut, asam yang seimbang, dan aroma yang khas. Varietas ini sering dianggap memiliki kualitas lebih tinggi daripada kopi Robusta, yang juga banyak tumbuh di Indonesia.",
       "3": "Beberapa kopi Arabika Indonesia telah diakui sebagai beberapa yang terbaik di dunia. Sebagai contoh, Kopi Gayo dari Aceh dan Kopi Toraja dari Sulawesi telah mendapatkan reputasi internasional karena kualitasnya. Indonesia memiliki beragam varietas kopi Arabika, yang masing-masing memiliki karakteristik rasa yang berbeda. Hal ini membuat Indonesia menjadi tempat yang menarik untuk mencoba berbagai jenis kopi Arabika."
+    },
+    "list": {
+      "1": {
+        "title": "Greenbean (gabah)",
+        "sub": {
+          "1": {
+            "title": "Fullwash",
+            "desc": "Biji kopi yang telah melalui proses pengupasan, pembersihan, dan penjemuran. Dibuat untuk mendapatkan kopi dengan rasa yang bersih dan berkualitas."
+          },
+          "2": {
+            "title": "Semiwash",
+            "desc": "Kopi giling basah bagi yang ingin mengatur variasi cita rasa dari kopi Anda."
+          },
+          "3": {
+            "title": "Natural",
+            "desc": "Metode pengolahan paling sederhana. Tanpa melalui proses pengupasan, dapatkan aroma dan rasa yang lebih kuat pada kopi Anda."
+          },
+          "4": {
+            "title": "Honey",
+            "desc": "Pengolahan paling kompleks dibandingkan yang lainnya untuk memunculkan cita rasa manis dan aroma yang lebih kuat."
+          },
+          "5": {
+            "title": "Wine",
+            "desc": "Biji kopi yang telah difermentasi untuk menciptakan cita rasa asam serupa wine."
+          },
+          "6": {
+            "title": "Lanang",
+            "desc": "Biji kopi hanya memiliki satu biji dalam satu buah, yang menghasilkan rasa lebih intens dan kompleks."
+          }
+        }
+      },
+      "2": {
+        "title": "Roastbean (Biji Kopi tinggal digiling)",
+        "sub": {
+          "1": {
+            "title": "Medium",
+            "desc": "Biji kopi panggang dengan tingkat panggangan sedang, memberikan cita rasa yang seimbang antara keasaman dan aroma kopi."
+          },
+          "2": {
+            "title": "Medium to Dark",
+            "desc": "Biji kopi panggang dengan tingkat panggangan dari sedang menuju gelap, dengan cita rasa yang lebih mendalam."
+          },
+          "3": {
+            "title": "Dark",
+            "desc": "Biji kopi panggang dengan tingkat panggangan gelap, menghasilkan cita rasa kopi yang kuat dan pekat."
+          },
+          "4": {
+            "title": "Dark Oily",
+            "desc": "Biji kopi panggang yang gelap dan memiliki minyak pada permukaannya, memberikan kelembutan dan kekentalan yang unik."
+          }
+        }
+      },
+      "3": {
+        "title": "Ground Coffee (Bubuk Kopi)",
+        "sub": {
+          "1": {
+            "title": "Fine (Halus)",
+            "desc": "Bubuk kopi halus cocok untuk espresso dan brewer dengan penyaring halus, menghasilkan kopi yang kental."
+          },
+          "2": {
+            "title": "Medium (Sedang)",
+            "desc": "Bubuk kopi sedang umumnya digunakan untuk metode penyaringan yang umum, menghasilkan kopi dengan kepekatan yang moderat."
+          },
+          "3": {
+            "title": "Medium To Coarse (Sedang hingga Kasar)",
+            "desc": "Bubuk kopi sedang hingga kasar cocok untuk penyaring dengan alat yang lebih kasar, seperti French Press."
+          },
+          "4": {
+            "title": "Coarse (Kasar)",
+            "desc": "Bubuk kopi kasar ideal untuk penyaring dengan metode yang membutuhkan bubuk yang sangat kasar."
+          }
+        }
+      }
     }
   },
   "Atsiri": {
@@ -229,6 +302,17 @@
       "4": {
         "q": "Apakah Anda menerima pesanan grosir atau kerjasama bisnis?",
         "a": "Kami menerima pesanan grosir dan berpotensi untuk menjalin kerjasama bisnis. Untuk informasi lebih lanjut tentang pesanan grosir atau peluang kerjasama bisnis, silakan hubungi tim kami melalui laman Contact Us. Kami akan dengan senang hati menjawab pertanyaan Anda dan berdiskusi lebih lanjut mengenai kerjasama."
+      }
+    },
+    "list": {
+      "1": {
+        "title": "Minyak Atsiri",
+        "sub": {
+          "1": {
+            "title": "Cengkeh",
+            "desc": "Minyak atsiri dari tumbuhan aromatik yang sering digunakan dalam industri kosmetik, farmasi, dan makanan sebagai bahan tambahan untuk memberikan aroma dan rasa yang kuat. Minyak atsiri ini bersifat antimikroba dan analgesik yang dapat memberikan manfaat kesehatan."
+          }
+        }
       }
     }
   },

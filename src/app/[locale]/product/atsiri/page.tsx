@@ -8,7 +8,7 @@ import { Arrow, ChevronWhiteBig } from '@/components/icons'
 import { Accordion, Text } from '@mantine/core'
 import { IconPlus } from '@tabler/icons-react'
 import { useInView } from 'framer-motion'
-import { Reveal, SidenavAnimate } from '@/components'
+import { ProductListCard, Reveal, SidenavAnimate } from '@/components'
 import { useTranslations } from 'next-intl'
 
 export default function CoffeeDetail() {
@@ -25,6 +25,9 @@ export default function CoffeeDetail() {
 
   const refFaq = useRef(null)
   const isInViewFaq = useInView(refFaq)
+
+  const refProductList = useRef(null)
+  const isInViewProductList = useInView(refProductList)
 
   const [nav1, setNav1] = useState<Slider | undefined>()
   const [nav2, setNav2] = useState<Slider | undefined>()
@@ -95,6 +98,14 @@ export default function CoffeeDetail() {
           >
             Frequently Asked Question
           </p>
+          <p
+            className={`flex-none text-[12px] text-[#667085] font-medium transition-all ${
+              isInViewFaq && 'border-b-2 border-[#73A1C3]'
+            }`}
+            onClick={() => scrollTo('productlist')}
+          >
+            Product List
+          </p>
         </div>
         <div className="lg:w-1/4 hidden lg:block relative">
           <div className="sticky w-full top-[120px] flex flex-col gap-[16px]">
@@ -131,10 +142,14 @@ export default function CoffeeDetail() {
             >
               Frequently Asked Question
             </SidenavAnimate>
-
-            <p className="text-[#667085] text-[20px] leading-[27px] cursor-pointer">
-              Product list
-            </p>
+            <SidenavAnimate
+              isInView={isInViewProductList}
+              scrollTo={() => {
+                scrollTo('productlist')
+              }}
+            >
+              Product List
+            </SidenavAnimate>
           </div>
         </div>
         <div className="lg:w-3/4 w-full flex flex-col gap-10 mg:gap-20">
@@ -485,6 +500,24 @@ export default function CoffeeDetail() {
                   <Accordion.Panel>{t('faq.4.a')}</Accordion.Panel>
                 </Accordion.Item>
               </Accordion>
+            </Reveal>
+          </div>
+          {/* Product List */}
+          <div className="w-full" id="productlist" ref={refProductList}>
+            <Reveal>
+              <p className="text-center text-[#294696] text-[32px] md:text-[48px] leading-[43.2px] md:leading-[64.8px] font-bold mb-5">
+                Product List
+              </p>
+            </Reveal>
+            <Reveal>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                <ProductListCard
+                  imgsrc="/productlist4.jpg"
+                  title={t('list.1.title')}
+                  subtitle={t('list.1.sub.1.title')}
+                  desc={t('list.1.sub.1.desc')}
+                />
+              </div>
             </Reveal>
           </div>
         </div>
