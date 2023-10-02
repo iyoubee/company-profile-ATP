@@ -149,7 +149,7 @@ export const ValueIndex: React.FC = () => {
             </p>
           </Reveal>
           <Reveal>
-            <div className='flex flex-col gap-4'>
+            <div className="flex flex-col gap-4">
               <p className="text-[#525C60] font-medium text-[12px] md:text-[18px] leading-[24px] text-justify">
                 {t('desc')}
               </p>

@@ -115,7 +115,7 @@ export const PartnerIndex: React.FC = () => {
                 {t('title')}
               </p>
               <p className="text-[#FFFAEB] font-medium md:text-[18px] text-justify leading-[24.3px]">
-              {t('desc')}
+                {t('desc')}
               </p>
             </div>
           </Reveal>
