@@ -6,10 +6,12 @@ import { PartnerCard } from '../PartnerCard'
 import Slider from 'react-slick'
 import { ChevronWhiteBig } from '@/components/icons'
 import { Reveal } from '../Reveal'
+import { useTranslations } from 'next-intl'
 
 export const PartnerIndex: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null)
   const sliderRef2 = useRef<Slider | null>(null)
+  const t = useTranslations('Index.partner')
 
   const next = () => {
     sliderRef.current?.slickNext()
@@ -110,16 +112,10 @@ export const PartnerIndex: React.FC = () => {
           <Reveal>
             <div className="flex gap-3 lg:gap-[64px] flex-col lg:flex-row">
               <p className="text-[#294696] text-[32px] md:text-[64px] font-bold leading-[43.2px] md:leading-[86.4px] flex-none">
-                Partner Kami
+                {t('title')}
               </p>
               <p className="text-[#FFFAEB] font-medium md:text-[18px] text-justify leading-[24.3px]">
-                Kami sangat berterima kasih atas testimoni positif dari
-                pelanggan kami. Kami selalu bekerja keras untuk meningkatkan
-                produk dan layanan kami, dan menjadi kepuasan bagi kami ketika
-                mendengar bahwa pelanggan kami puas. Kami berkomitmen untuk
-                memberikan pelanggan kami pengalaman produk terbaik yang kami
-                bisa berikan, dan kami berharap Anda akan terus mengunjungi kami
-                dan menikmati produk kami.
+              {t('desc')}
               </p>
             </div>
           </Reveal>

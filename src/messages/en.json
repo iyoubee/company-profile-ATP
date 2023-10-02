@@ -28,7 +28,8 @@
     },
     "value": {
       "title": "Our Values for Continuous Growth",
-      "desc": "Our company operates in the field of horticulture, which not only expands our business, but also has agro-tourism and conducts education. We have a vision to be a company that contributes positively to the environment, society, and economy of Indonesia.",
+      "desc": "Our company operates in the field of agribusiness, especially agro-industry combined with environmental services, including agrotourism.",
+      "subdesc" : "We have a vision to be a company that contributes positively to the environment, society, and economy of Indonesia.",
       "1": {
         "title": "Pioneering",
         "desc": "We are determined to always understand the market needs in making our products. We take initiative and start new things to make positive changes."
@@ -47,9 +48,8 @@
       }
     },
     "partner": {
-      "title": "Partner Kami",
-      "desc": "Kami sangat berterima kasih atas testimoni positif dari pelanggan kami. Kami selalu bekerja keras untuk meningkatkan produk dan layanan kami, dan menjadi kepuasan bagi kami ketika mendengar bahwa pelanggan kami puas. Kami berkomitmen untuk memberikan pelanggan kami pengalaman produk terbaik yang kami bisa berikan, dan kami berharap Anda akan terus mengunjungi kami dan menikmati produk kami.",
-      "1": "",
+      "title": "Our Partner",
+      "desc": "We are deeply grateful for the positive testimonials from our customers. We continuously strive to improve our products and services, and it brings us great satisfaction to hear that our customers are pleased. We are committed to providing our customers with the best product experience we can offer, and we hope you will continue to visit us and enjoy our products.",
       "2": "",
       "3": ""
     },
